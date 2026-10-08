@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Accident Severity Intelligence</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/dashboard.css') }}">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-mark">A</div>
+
+            <div>
+                <div class="brand-name">ACCIDENT AI</div>
+                <div class="brand-sub">SEVERITY INTELLIGENCE</div>
+            </div>
+        </div>
+
+        <nav class="side-nav">
+
+            <button class="nav-item active"
+                    type="button"
+                    data-section="overview">
+                <span class="nav-icon">◉</span>
+                <span>Overview</span>
+            </button>
+
+            <button class="nav-item"
+                    type="button"
+                    data-section="prediction">
+                <span class="nav-icon">＋</span>
+                <span>Prediction</span>
+            </button>
+
+            <button class="nav-item"
+                    type="button"
+                    data-section="risk">
+                <span class="nav-icon">◆</span>
+                <span>Risk Analysis</span>
+            </button>
+
+            <button class="nav-item"
+                    type="button"
+                    data-section="models">
+                <span class="nav-icon">▣</span>
+                <span>Model Analysis</span>
+            </button>
+
+            <button class="nav-item"
+                    type="button"
+                    data-section="graphs">
+                <span class="nav-icon">📊</span>
+                <span>Analytics Graphs</span>
+            </button>
+
+            <button class="nav-item"
+                    type="button"
+                    data-section="summary">
+                <span class="nav-icon">≡</span>
+                <span>Input Summary</span>
+            </button>
+
+        </nav>
+
+        <div class="sidebar-status">
+            <span class="status-dot"></span>
+
+            <div>
+                <strong>System Online</strong>
+                <small>ML models loaded</small>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+                <div class="eyebrow">
+                    AI-POWERED ROAD SAFETY
+                </div>
+
+                <h1>
+                    Accident Severity Intelligence
+                </h1>
+
+                <p>
+                    Analyze accident characteristics and estimate
+                    severity using machine learning.
+                </p>
+            </div>
+
+            <div class="topbar-badge">
+                <span></span>
+                LIVE SYSTEM
+            </div>
+
+        </header>
+
+
+        <div class="content">
+
+            <!-- ================================================= -->
+            <!-- OVERVIEW -->
+            <!-- ================================================= -->
+
+            {% if prediction %}
+
+            <section class="dashboard-section active"
+                     id="overview">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="section-kicker">
+                            01 / OVERVIEW
+                        </span>
+
+                        <h2>
+                            Prediction overview
+                        </h2>
+
+                        <p>
+                            Severity estimate generated from the
+                            submitted accident characteristics.
+                        </p>
+                    </div>
+
+                    <button class="outline-btn"
+                            type="button"
+                            data-section="prediction">
+
+                        Run another prediction
+
+                    </button>
+
+                </div>
+
+
+                <div class="hero-grid">
+
+                    <!-- Severity -->
+                    <div class="severity-card">
+
+                        <div class="card-label">
+                            PREDICTED SEVERITY
+                        </div>
+
+                        <div class="severity-row">
+
+                            <div class="severity-icon">
+                                {{ '!' if prediction == 'Fatal'
+                                   else ('↑' if prediction == 'Serious'
+                                   else '•') }}
+                            </div>
+
+                            <div>
+
+                                <div class="severity-value">
+                                    {{ prediction }}
+                                </div>
+
+                                <div class="muted">
+                                    Random Forest primary prediction
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="confidence-wrap">
+
+                            <div class="confidence-label">
+
+                                <span>
+                                    Model confidence
+                                </span>
+
+                                <strong>
+                                    {{ confidence|round(1) }}%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress">
+                                <span style="width: {{ confidence }}%"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Agreement -->
+                    <div class="metric-card">
+
+                        <span class="card-label">
+                            MODEL AGREEMENT
+                        </span>
+
+                        <div class="metric-value">
+                            {{ model_agreement }}
+                        </div>
+
+                        <p>
+                            Random Forest and Logistic Regression
+                        </p>
+
+                    </div>
+
+
+                    <!-- Time -->
+                    <div class="metric-card">
+
+                        <span class="card-label">
+                            RECORDED AT
+                        </span>
+
+                        <div class="metric-value compact">
+                            {{ timestamp }}
+                        </div>
+
+                        <p>
+                            Prediction session
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-grid two">
+
+                    <!-- Probability -->
+                    <div class="panel">
+
+                        <div class="panel-head">
+
+                            <div>
+                                <span class="section-kicker">
+                                    SEVERITY DISTRIBUTION
+                                </span>
+
+                                <h3>
+                                    Probability breakdown
+                                </h3>
+                            </div>
+
+                        </div>
+
+
+                        <div class="prob-list">
+
+                            <div class="prob-item">
+
+                                <div class="prob-top">
+                                    <span>Minor</span>
+
+                                    <strong>
+                                        {{ probabilities.Minor|round(1) }}%
+                                    </strong>
+                                </div>
+
+                                <div class="progress">
+                                    <span class="minor-bar"
+                                          style="width: {{ probabilities.Minor }}%">
+                                    </span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="prob-item">
+
+                                <div class="prob-top">
+                                    <span>Serious</span>
+
+                                    <strong>
+                                        {{ probabilities.Serious|round(1) }}%
+                                    </strong>
+                                </div>
+
+                                <div class="progress">
+                                    <span class="serious-bar"
+                                          style="width: {{ probabilities.Serious }}%">
+                                    </span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="prob-item">
+
+                                <div class="prob-top">
+                                    <span>Fatal</span>
+
+                                    <strong>
+                                        {{ probabilities.Fatal|round(1) }}%
+                                    </strong>
+                                </div>
+
+                                <div class="progress">
+                                    <span class="fatal-bar"
+                                          style="width: {{ probabilities.Fatal }}%">
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Chart -->
+                    <div class="panel chart-panel">
+
+                        <div class="panel-head">
+
+                            <div>
+                                <span class="section-kicker">
+                                    CLASS MIX
+                                </span>
+
+                                <h3>
+                                    Severity probability
+                                </h3>
+                            </div>
+
+                        </div>
+
+                        <div class="donut-wrap">
+
+                            <canvas id="severityChart"
+                                    data-minor="{{ probabilities.Minor }}"
+                                    data-serious="{{ probabilities.Serious }}"
+                                    data-fatal="{{ probabilities.Fatal }}">
+                            </canvas>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            {% else %}
+
+            <!-- FIRST VISIT -->
+            <section class="dashboard-section active"
+                     id="overview">
+
+                <div class="welcome-card">
+
+                    <div>
+
+                        <span class="section-kicker">
+                            ACCIDENT AI / ML DASHBOARD
+                        </span>
+
+                        <h2>
+                            Ready to analyze an accident.
+                        </h2>
+
+                        <p>
+                            Enter the accident characteristics and
+                            generate a severity estimate for
+                            <b>Minor</b>, <b>Serious</b>, or
+                            <b>Fatal</b>.
+                        </p>
+
+
+                        <!-- FIXED BUTTON -->
+                        <button class="primary-btn"
+                                type="button"
+                                data-section="prediction">
+
+                            Start prediction
+                            <span>→</span>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="welcome-orb">
+                        A
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-grid three intro-metrics">
+
+                    <div class="metric-card">
+
+                        <span class="card-label">
+                            TARGET
+                        </span>
+
+                        <div class="metric-value">
+                            3 classes
+                        </div>
+
+                        <p>
+                            Minor / Serious / Fatal
+                        </p>
+
+                    </div>
+
+
+                    <div class="metric-card">
+
+                        <span class="card-label">
+                            MODELS
+                        </span>
+
+                        <div class="metric-value">
+                            2
+                        </div>
+
+                        <p>
+                            Random Forest + Logistic Regression
+                        </p>
+
+                    </div>
+
+
+                    <div class="metric-card">
+
+                        <span class="card-label">
+                            INPUTS
+                        </span>
+
+                        <div class="metric-value">
+                            21
+                        </div>
+
+                        <p>
+                            Accident characteristics
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            {% endif %}
+
+
+            <!-- ================================================= -->
+            <!-- PREDICTION -->
+            <!-- ================================================= -->
+
+            <section class="dashboard-section"
+                     id="prediction">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-kicker">
+                            02 / INPUT ANALYSIS
+                        </span>
+
+                        <h2>
+                            Accident information
+                        </h2>
+
+                        <p>
+                            Complete the fields below to generate
+                            a severity prediction.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <form action="/predict"
+                      method="POST"
+                      id="predictionForm">
+
+                    <div class="form-panel">
+
+
+                        <!-- LOCATION -->
+                        <div class="form-section">
+
+                            <div class="form-section-title">
+
+                                <span>01</span>
+
+                                <div>
+
+                                    <h3>
+                                        Location & time
+                                    </h3>
+
+                                    <p>
+                                        Where and when the accident occurred
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="field-grid three">
+
+                                <label>
+                                    State Name
+
+                                    <input
+                                        name="State Name"
+                                        required
+                                        placeholder="e.g. Telangana">
+                                </label>
+
+
+                                <label>
+                                    City Name
+
+                                    <input
+                                        name="City Name"
+                                        required
+                                        placeholder="e.g. Hyderabad">
+                                </label>
+
+
+                                <label>
+                                    Year
+
+                                    <input
+                                        name="Year"
+                                        type="number"
+                                        value="2025"
+                                        required>
+                                </label>
+
+
+                                <label>
+                                    Month
+
+                                    <select name="Month" required>
+
+                                        <option value="">
+                                            Select month
+                                        </option>
+
+                                        <option>January</option>
+                                        <option>February</option>
+                                        <option>March</option>
+                                        <option>April</option>
+                                        <option>May</option>
+                                        <option>June</option>
+                                        <option>July</option>
+                                        <option>August</option>
+                                        <option>September</option>
+                                        <option>October</option>
+                                        <option>November</option>
+                                        <option>December</option>
+
+                                    </select>
+
+                                </label>
+
+
+                                <label>
+                                    Day of Week
+
+                                    <select name="Day of Week" required>
+
+                                        <option value="">
+                                            Select day
+                                        </option>
+
+                                        <option>Monday</option>
+                                        <option>Tuesday</option>
+                                        <option>Wednesday</option>
+                                        <option>Thursday</option>
+                                        <option>Friday</option>
+                                        <option>Saturday</option>
+                                        <option>Sunday</option>
+
+                                    </select>
+
+                                </label>
+
+
+                                <label>
+                                    Time of Day
+
+                                    <input
+                                        name="Time of Day"
+                                        type="time"
+                                        required>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- VEHICLE -->
+                        <div class="form-section">
+
+                            <div class="form-section-title">
+
+                                <span>02</span>
+
+                                <div>
+
+                                    <h3>
+                                        Vehicle & accident details
+                                    </h3>
+
+                                    <p>
+                                        Collision and casualty information
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="field-grid three">
+
+                                <label>
+                                    Number of Vehicles Involved
+
+                                    <input
+                                        name="Number of Vehicles Involved"
+                                        type="number"
+                                        min="1"
+                                        required
+                                        placeholder="e.g. 2">
+                                </label>
+
+
+                                <label>
+                                    Vehicle Type Involved
+
+                                    <select
+                                        name="Vehicle Type Involved"
+                                        required>
+
+                                        <option value="">
+                                            Select vehicle type
+                                        </option>
+
+                                        <option>Car</option>
+                                        <option>Motorcycle</option>
+                                        <option>Truck</option>
+                                        <option>Bus</option>
+                                        <option>Auto Rickshaw</option>
+                                        <option>Other</option>
+
+                                    </select>
+
+                                </label>
+
+
+                                <label>
+                                    Number of Casualties
+
+                                    <input
+                                        name="Number of Casualties"
+                                        type="number"
+                                        min="0"
+                                        required
+                                        placeholder="e.g. 2">
+                                </label>
+
+
+                                <label>
+                                    Number of Fatalities
+
+                                    <input
+                                        name="Number of Fatalities"
+                                        type="number"
+                                        min="0"
+                                        required
+                                        placeholder="e.g. 0">
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ROAD -->
+                        <div class="form-section">
+
+                            <div class="form-section-title">
+
+                                <span>03</span>
+
+                                <div>
+
+                                    <h3>
+                                        Road & environment
+                                    </h3>
+
+                                    <p>
+                                        Environmental and roadway conditions
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="field-grid three">
+
+                                <label>
+                                    Weather Conditions
+
+                                    <select
+                                        name="Weather Conditions"
+                                        required>
+
+                                        <option value="">
+                                            Select weather
+                                        </option>
+
+                                        <option>Clear</option>
+                                        <option>Rainy</option>
+                                        <option>Foggy</option>
+                                        <option>Stormy</option>
+                                        <option>Snowy</option>
+
+                                    </select>
+
+                                </label>
+
+
+                                <label>
+                                    Road Type
+
+                                    <select
+                                        name="Road Type"
+                                        required>
+
+                                        <option value="">
+                                            Select road type
+                                        </option>
+
+                                        <option>Urban Road</option>
+                                        <option>Highway</option>
+                                        <option>Rural Road</option>
+                                        <option>Expressway</option>
+                                        <option>Intersection</option>
+
+                                    </select>
+
+                                </label>
+
+
+                                <label>
+                                    Road Condition
+
+                                    <select
+                                        name="Road Condition"
+                                        required>
+
+                                        <option value="">
+                                            Select road condition
+                                        </option>
+
+                                        <option>Dry</option>
+                                        <option>Wet</option>
+                                        <option>Damaged</option>
+                                        <option>Under Construction</option>
+                                        <option>Snow/Ice</option>
+
+                                    </select>
+
+                                </label>
+
+
+                                <label>
+                                    Lighting Conditions
+
+                                    <select
+                                        name="Lighting Conditions"
+                                        required>
+
+                                        <option value="">
+                                            Select lighting
+                                        </option>
+
+                                        <option>Daylight</option>
+                                        <option>Dark</option>
+                                        <option>Street Lights</option>
+                                        <option>Dawn/Dusk</option>
+
+                                    </select>
+
+                                </label>
+
+
+                                <label>
+                                    Traffic Control Presence
+
+                                    <select
+                                        name="Traffic Control Presence"
+                                        required>
+
+                                        <option value="">
+                                            Select traffic control
+                                        </option>
+
+                                        <option>Signals</option>
+                                        <option>Stop Sign</option>
+                                        <option>Police</option>
+                                        <option>None</option>
+                                        <option>Other</option>
+
+                                    </select>
+
+                                </label>
+
+
+                                <label>
+                                    Speed Limit (km/h)
+
+                                    <input
+                                        name="Speed Limit (km/h)"
+                                        type="number"
+                                        min="1"
+                                        required
+                                        placeholder="e.g. 60">
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- DRIVER -->
+                        <div class="form-section">
+
+                            <div class="form-section-title">
+
+                                <span>04</span>
+
+                                <div>
+
+                                    <h3>
+                                        Driver information
+                                    </h3>
+
+                                    <p>
+                                        Driver characteristics and compliance
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="field-grid three">
+
+                                <label>
+                                    Driver Age
+
+                                    <input
+                                        name="Driver Age"
+                                        type="number"
+                                        min="10"
+                                        max="100"
+                                        required
+                                        placeholder="e.g. 35">
+
+                                </label>
+
+
+                                <label>
+                                    Driver Gender
+
+                                    <select
+                                        name="Driver Gender"
+                                        required>
+
+                                        <option value="">
+                                            Select gender
+                                        </option>
+
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                        <option>Other</option>
+
+                                    </select>
+
+                                </label>
+
+
+                                <label>
+                                    Driver License Status
+
+                                    <select
+                                        name="Driver License Status"
+                                        required>
+
+                                        <option value="">
+                                            Select status
+                                        </option>
+
+                                        <option>Valid</option>
+                                        <option>Expired</option>
+                                        <option>Suspended</option>
+                                        <option>None</option>
+
+                                    </select>
+
+                                </label>
+
+
+                                <label>
+                                    Alcohol Involvement
+
+                                    <select
+                                        name="Alcohol Involvement"
+                                        required>
+
+                                        <option value="">
+                                            Select
+                                        </option>
+
+                                        <option>No</option>
+                                        <option>Yes</option>
+
+                                    </select>
+
+                                </label>
+
+
+                                <label class="span-2">
+
+                                    Accident Location Details
+
+                                    <select
+                                        name="Accident Location Details"
+                                        required>
+
+                                        <option value="">
+                                            Select location detail
+                                        </option>
+
+                                        <option>Intersection</option>
+                                        <option>Highway</option>
+                                        <option>Residential Area</option>
+                                        <option>Market Area</option>
+                                        <option>School Zone</option>
+                                        <option>Industrial Area</option>
+                                        <option>Other</option>
+
+                                    </select>
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-actions">
+
+                            <div class="form-note">
+                                <span>●</span>
+                                All required fields must be completed.
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="primary-btn"
+                                id="submitBtn">
+
+                                Generate severity prediction
+                                <span>→</span>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+
+            {% if prediction %}
+
+            <!-- ================================================= -->
+            <!-- RISK -->
+            <!-- ================================================= -->
+
+            <section class="dashboard-section"
+                     id="risk">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-kicker">
+                            03 / RISK ANALYSIS
+                        </span>
+
+                        <h2>
+                            Risk indicators
+                        </h2>
+
+                        <p>
+                            Signals calculated from the submitted
+                            accident characteristics.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="indicator-grid">
+
+                    {% for indicator in risk_indicators %}
+
+                    <div class="indicator-card">
+
+                        <div class="indicator-top">
+
+                            <span class="indicator-icon">
+                                !
+                            </span>
+
+                            <span class="level {{ indicator.level|lower }}">
+                                {{ indicator.level }}
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            {{ indicator.name }}
+                        </h3>
+
+                        <p>
+                            {{ indicator.description }}
+                        </p>
+
+                    </div>
+
+                    {% endfor %}
+
+                </div>
+
+
+                <div class="panel profile-panel">
+
+                    <div class="panel-head">
+
+                        <div>
+
+                            <span class="section-kicker">
+                                ACCIDENT PROFILE
+                            </span>
+
+                            <h3>
+                                Incident context
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="profile-grid">
+
+                        <div>
+                            <span>State</span>
+                            <strong>{{ profile.location.state }}</strong>
+                        </div>
+
+                        <div>
+                            <span>City</span>
+                            <strong>{{ profile.location.city }}</strong>
+                        </div>
+
+                        <div>
+                            <span>Vehicles</span>
+                            <strong>{{ profile.vehicles }}</strong>
+                        </div>
+
+                        <div>
+                            <span>Casualties</span>
+                            <strong>{{ profile.casualties }}</strong>
+                        </div>
+
+                        <div>
+                            <span>Fatalities</span>
+                            <strong>{{ profile.fatalities }}</strong>
+                        </div>
+
+                        <div>
+                            <span>Weather</span>
+                            <strong>{{ profile.weather }}</strong>
+                        </div>
+
+                        <div>
+                            <span>Road condition</span>
+                            <strong>{{ profile.road_condition }}</strong>
+                        </div>
+
+                        <div>
+                            <span>Lighting</span>
+                            <strong>{{ profile.lighting }}</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================================================= -->
+            <!-- MODELS -->
+            <!-- ================================================= -->
+
+            <section class="dashboard-section"
+                     id="models">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-kicker">
+                            04 / MODEL ANALYSIS
+                        </span>
+
+                        <h2>
+                            Model comparison
+                        </h2>
+
+                        <p>
+                            Two trained classifiers evaluated
+                            the same accident input.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="model-grid">
+
+                    <div class="model-card primary-model">
+
+                        <span class="model-tag">
+                            PRIMARY MODEL
+                        </span>
+
+                        <h3>
+                            Random Forest
+                        </h3>
+
+                        <div class="model-prediction">
+                            {{ rf_prediction }}
+                        </div>
+
+                        <p>
+                            Used as the primary dashboard prediction.
+                        </p>
+
+                    </div>
+
+
+                    <div class="model-card">
+
+                        <span class="model-tag">
+                            SECONDARY MODEL
+                        </span>
+
+                        <h3>
+                            Logistic Regression
+                        </h3>
+
+                        <div class="model-prediction">
+                            {{ lr_prediction }}
+                        </div>
+
+                        <p>
+                            Provides a second model perspective.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="agreement-card">
+
+                    <div>
+
+                        <span class="section-kicker">
+                            MODEL AGREEMENT
+                        </span>
+
+                        <h3>
+                            {{ model_agreement }}
+                        </h3>
+
+                        <p>
+                            Whether both models selected the same
+                            severity class.
+                        </p>
+
+                    </div>
+
+                    <div class="agreement-mark">
+                        {{ '✓' if rf_prediction == lr_prediction else '≠' }}
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================================================= -->
+            <!-- SUMMARY -->
+            <!-- ================================================= -->
+
+            <section class="dashboard-section"
+                     id="summary">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-kicker">
+                            05 / INPUT SUMMARY
+                        </span>
+
+                        <h2>
+                            Submitted accident data
+                        </h2>
+
+                        <p>
+                            Complete record used to generate
+                            this prediction.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="summary-panel">
+
+                    {% for key, value in input_summary.items() %}
+
+                    <div class="summary-row">
+
+                        <span>
+                            {{ key }}
+                        </span>
+
+                        <strong>
+                            {{ value }}
+                        </strong>
+
+                    </div>
+
+                    {% endfor %}
+
+                </div>
+
+            </section>
+
+
+            {% else %}
+
+            <!-- EMPTY RISK -->
+            <section class="dashboard-section"
+                     id="risk">
+
+                <div class="empty-state">
+
+                    <span>03</span>
+
+                    <h2>
+                        Risk Analysis
+                    </h2>
+
+                    <p>
+                        Generate a prediction first to view
+                        risk indicators.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- EMPTY MODELS -->
+            <section class="dashboard-section"
+                     id="models">
+
+                <div class="empty-state">
+
+                    <span>04</span>
+
+                    <h2>
+                        Model Analysis
+                    </h2>
+
+                    <p>
+                        Generate a prediction first to compare
+                        the two models.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- EMPTY SUMMARY -->
+            <section class="dashboard-section"
+                     id="summary">
+
+                <div class="empty-state">
+
+                    <span>05</span>
+
+                    <h2>
+                        Input Summary
+                    </h2>
+
+                    <p>
+                        Your submitted values will appear here
+                        after prediction.
+                    </p>
+
+                </div>
+
+            </section>
+
+            {% endif %}
+
+            <!-- ================================================= -->
+            <!-- DEDICATED VISUAL ANALYTICS & GRAPHS SECTION       -->
+            <!-- ================================================= -->
+            <section class="dashboard-section" id="graphs">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-kicker">
+                            VISUAL ANALYTICS GALLERY
+                        </span>
+                        <h2>
+                            Accident Intelligence Graphs
+                        </h2>
+                        <p>
+                            Interactive dataset distributions and machine learning performance evaluations.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- GRAPH SELECTOR / CONTROL PANEL -->
+                <div class="graphs-control-panel">
+                    <span class="control-label">Press to display:</span>
+                    <div class="graph-filter-buttons">
+                        <button class="graph-tab-btn active" type="button" data-graph-target="all">
+                            All Graphs (Grid)
+                        </button>
+                        <button class="graph-tab-btn" type="button" data-graph-target="card-dist">
+                            1. Load Distribution
+                        </button>
+                        <button class="graph-tab-btn" type="button" data-graph-target="card-acc">
+                            2. Actual vs Predicted
+                        </button>
+                        <button class="graph-tab-btn" type="button" data-graph-target="card-feat">
+                            3. Feature Importance
+                        </button>
+                        <button class="graph-tab-btn" type="button" data-graph-target="card-weather">
+                            4. Weather & Severity
+                        </button>
+                    </div>
+                </div>
+
+                <!-- GRAPHS GALLERY WRAPPER (Grey + Black + White UI) -->
+                <div class="analytics-charts-wrapper">
+
+                    <div class="analytics-charts-grid" id="graphsGalleryGrid">
+
+                        <!-- GRAPH 1: OCCUPANCY / SEVERITY LOAD DISTRIBUTION -->
+                        <div class="analytics-card" id="card-dist">
+                            <div class="analytics-card-header">
+                                <h3 class="analytics-card-title">Occupancy / Severity Load Distribution</h3>
+                                <div class="analytics-legend">
+                                    <span class="legend-pill-bar"></span>
+                                    <span class="legend-pill-label">Record Count</span>
+                                </div>
+                            </div>
+                            <div class="analytics-chart-body">
+                                <canvas id="loadDistributionChart"></canvas>
+                            </div>
+                        </div>
+
+                        <!-- GRAPH 2: MODEL ACCURACY ACTUAL VS PREDICTED -->
+                        <div class="analytics-card" id="card-acc">
+                            <div class="analytics-card-header">
+                                <h3 class="analytics-card-title">Model Accuracy: Actual vs Predicted</h3>
+                                <div class="analytics-legend-group">
+                                    <div class="analytics-legend-item">
+                                        <span class="legend-box-actual"></span>
+                                        <span class="legend-pill-label">Actual Severity</span>
+                                    </div>
+                                    <div class="analytics-legend-item">
+                                        <span class="legend-box-predicted"></span>
+                                        <span class="legend-pill-label">Predicted Severity</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="analytics-chart-body">
+                                <canvas id="accuracyChart"></canvas>
+                            </div>
+                        </div>
+
+                        <!-- GRAPH 3: RANDOM FOREST FEATURE IMPORTANCE -->
+                        <div class="analytics-card" id="card-feat">
+                            <div class="analytics-card-header">
+                                <h3 class="analytics-card-title">Random Forest Feature Importance (%)</h3>
+                                <div class="analytics-legend">
+                                    <span class="legend-pill-bar" style="background: #cbd5e1;"></span>
+                                    <span class="legend-pill-label">Contribution Weight</span>
+                                </div>
+                            </div>
+                            <div class="analytics-chart-body">
+                                <canvas id="featureImportanceChart"></canvas>
+                            </div>
+                        </div>
+
+                        <!-- GRAPH 4: ACCIDENT SEVERITY BY WEATHER CONDITION -->
+                        <div class="analytics-card" id="card-weather">
+                            <div class="analytics-card-header">
+                                <h3 class="analytics-card-title">Severity by Weather Condition</h3>
+                                <div class="analytics-legend-group">
+                                    <div class="analytics-legend-item">
+                                        <span class="legend-pill-bar" style="background: #64748b;"></span>
+                                        <span class="legend-pill-label">Minor</span>
+                                    </div>
+                                    <div class="analytics-legend-item">
+                                        <span class="legend-pill-bar" style="background: #94a3b8;"></span>
+                                        <span class="legend-pill-label">Serious</span>
+                                    </div>
+                                    <div class="analytics-legend-item">
+                                        <span class="legend-pill-bar" style="background: #ffffff;"></span>
+                                        <span class="legend-pill-label">Fatal</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="analytics-chart-body">
+                                <canvas id="weatherSeverityChart"></canvas>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- FOOTER BANNER -->
+                    <div class="analytics-footer-banner">
+                        <span>Accident Severity Prediction System • Flask AI API • Grey + Black + White UI</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script id="analyticsData" type="application/json">
+{{ analytics|tojson if analytics else '{}' }}
+</script>
+
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+
+</body>
+</html>

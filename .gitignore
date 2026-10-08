@@ -1,0 +1,6 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.vscode/
+prediction_history.db

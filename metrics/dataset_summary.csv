@@ -1,0 +1,23 @@
+Column,Data Type,Missing Values,Unique Values
+State Name,str,0,32
+City Name,str,0,28
+Year,int64,0,6
+Month,str,0,12
+Day of Week,str,0,7
+Time of Day,str,0,1263
+Accident Severity,str,0,3
+Number of Vehicles Involved,int64,0,5
+Vehicle Type Involved,str,0,7
+Number of Casualties,int64,0,11
+Number of Fatalities,int64,0,6
+Weather Conditions,str,0,5
+Road Type,str,0,4
+Road Condition,str,0,4
+Lighting Conditions,str,0,4
+Traffic Control Presence,str,716,3
+Speed Limit (km/h),int64,0,91
+Driver Age,int64,0,53
+Driver Gender,str,0,2
+Driver License Status,str,975,2
+Alcohol Involvement,str,0,2
+Accident Location Details,str,0,4

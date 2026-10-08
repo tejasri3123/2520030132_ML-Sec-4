@@ -1,0 +1,63 @@
+{
+    "dataset": {
+        "file": "accident_prediction_india.csv",
+        "rows": 3000,
+        "columns": 22,
+        "target": "Accident Severity"
+    },
+    "severity_distribution": {
+        "Minor": 1034,
+        "Fatal": 985,
+        "Serious": 981
+    },
+    "classes": [
+        "Fatal",
+        "Minor",
+        "Serious"
+    ],
+    "models": {
+        "Random Forest": {
+            "Accuracy": 0.31,
+            "Precision_Macro": 0.310377319157807,
+            "Recall_Macro": 0.31004186662035765,
+            "F1_Macro": 0.31006583245389213
+        },
+        "Logistic Regression": {
+            "Accuracy": 0.33166666666666667,
+            "Precision_Macro": 0.33081415636419953,
+            "Recall_Macro": 0.33116522559881006,
+            "F1_Macro": 0.33075336379791825
+        }
+    },
+    "columns_detected": {
+        "weather": "Weather Conditions",
+        "road_condition": "Road Condition",
+        "vehicle_type": null,
+        "lighting": "Lighting Conditions",
+        "alcohol": "Alcohol Involvement",
+        "driver_age": "Driver Age",
+        "speed_limit": null,
+        "date": null,
+        "time": null,
+        "year": "Year",
+        "month": "Month"
+    },
+    "generated_graphs": [
+        "01_severity_distribution.png",
+        "02_weather_conditions.png",
+        "03_road_conditions.png",
+        "05_lighting_conditions.png",
+        "06_alcohol_involvement.png",
+        "08_severity_by_year.png",
+        "09_severity_by_weather.png",
+        "10_severity_by_road_condition.png",
+        "11_severity_by_lighting.png",
+        "12_severity_by_alcohol.png",
+        "13_driver_age_distribution.png",
+        "15_correlation_heatmap.png",
+        "16_model_comparison.png",
+        "17_logistic_regression_confusion_matrix.png",
+        "17_random_forest_confusion_matrix.png",
+        "18_feature_importance.png"
+    ]
+}

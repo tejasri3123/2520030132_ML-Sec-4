@@ -1,0 +1,601 @@
+State Name,City Name,Year,Month,Day of Week,Time of Day,Number of Vehicles Involved,Vehicle Type Involved,Number of Casualties,Number of Fatalities,Weather Conditions,Road Type,Road Condition,Lighting Conditions,Traffic Control Presence,Speed Limit (km/h),Driver Age,Driver Gender,Driver License Status,Alcohol Involvement,Accident Location Details,Actual Severity,Random Forest Prediction,Logistic Regression Prediction
+Maharashtra,Mumbai,2018,February,Thursday,4:9,1,Pedestrian,8,0,Hazy,National Highway,Wet,Dark,,62,49,Female,,Yes,Straight Road,Minor,Fatal,Minor
+Uttarakhand,Unknown,2018,August,Friday,19:58,1,Bus,10,2,Stormy,State Highway,Dry,Dusk,Police Checkpost,120,29,Female,Valid,Yes,Bridge,Minor,Fatal,Fatal
+Nagaland,Unknown,2019,December,Saturday,7:43,4,Car,7,1,Stormy,State Highway,Wet,Dark,Signs,100,23,Female,,No,Bridge,Minor,Minor,Minor
+Uttarakhand,Unknown,2022,February,Friday,18:39,1,Pedestrian,5,1,Hazy,Urban Road,Under Construction,Dusk,Signals,74,50,Male,Expired,No,Curve,Serious,Minor,Fatal
+Tamil Nadu,Madurai,2021,December,Saturday,16:57,1,Car,0,0,Hazy,National Highway,Damaged,Dusk,,111,25,Male,Expired,Yes,Curve,Fatal,Minor,Minor
+Delhi,Dwarka,2020,May,Tuesday,17:36,4,Bus,4,0,Stormy,State Highway,Wet,Daylight,Signals,36,24,Female,Valid,Yes,Intersection,Serious,Serious,Minor
+Mizoram,Unknown,2022,May,Saturday,2:35,2,Two-Wheeler,8,1,Rainy,State Highway,Under Construction,Dawn,,69,52,Male,,Yes,Straight Road,Minor,Fatal,Fatal
+Karnataka,Mysore,2022,February,Sunday,12:49,1,Bus,0,0,Hazy,State Highway,Wet,Dark,Signs,37,59,Female,,No,Bridge,Fatal,Serious,Serious
+Assam,Unknown,2018,October,Saturday,2:38,5,Bus,1,3,Rainy,State Highway,Under Construction,Dusk,Signs,56,38,Female,Valid,Yes,Bridge,Fatal,Serious,Minor
+Chandigarh,Unknown,2021,March,Friday,9:14,3,Two-Wheeler,8,1,Foggy,Urban Road,Dry,Dusk,Signals,106,53,Male,Expired,No,Intersection,Serious,Fatal,Minor
+Haryana,Unknown,2018,December,Sunday,16:46,1,Bus,6,1,Rainy,Village Road,Damaged,Dark,Signals,92,18,Male,Expired,No,Bridge,Serious,Serious,Serious
+Meghalaya,Unknown,2022,October,Saturday,3:11,1,Pedestrian,3,0,Hazy,State Highway,Dry,Dawn,Signals,77,70,Female,Valid,Yes,Bridge,Minor,Fatal,Minor
+Puducherry,Unknown,2018,July,Thursday,0:52,3,Auto-Rickshaw,8,0,Clear,Village Road,Dry,Dark,Signs,31,34,Male,Valid,No,Bridge,Fatal,Serious,Minor
+Chandigarh,Unknown,2018,March,Tuesday,3:22,3,Car,4,3,Rainy,Village Road,Wet,Dark,Signs,69,51,Male,Expired,Yes,Bridge,Fatal,Minor,Minor
+Telangana,Unknown,2021,September,Sunday,3:21,5,Cycle,0,2,Rainy,Urban Road,Wet,Dawn,Police Checkpost,49,36,Male,Expired,No,Bridge,Serious,Minor,Minor
+Jammu and Kashmir,Unknown,2023,June,Friday,13:17,2,Cycle,7,2,Rainy,National Highway,Under Construction,Dark,,61,39,Male,Expired,Yes,Intersection,Fatal,Serious,Serious
+Telangana,Unknown,2021,May,Saturday,14:39,2,Auto-Rickshaw,1,5,Stormy,National Highway,Damaged,Daylight,,82,22,Female,Valid,Yes,Bridge,Serious,Serious,Serious
+Telangana,Unknown,2022,October,Tuesday,21:56,5,Bus,0,1,Rainy,State Highway,Under Construction,Dark,Signals,43,41,Female,Expired,No,Straight Road,Fatal,Fatal,Fatal
+Assam,Unknown,2020,July,Thursday,19:18,2,Car,1,5,Foggy,National Highway,Under Construction,Dawn,,48,69,Female,Expired,No,Curve,Minor,Serious,Minor
+Tripura,Unknown,2018,April,Monday,19:54,4,Two-Wheeler,2,3,Clear,Urban Road,Under Construction,Dawn,Signs,110,50,Female,Expired,No,Bridge,Serious,Minor,Minor
+Uttarakhand,Unknown,2018,March,Thursday,6:42,2,Bus,4,4,Clear,State Highway,Wet,Daylight,Signs,79,25,Female,Valid,No,Bridge,Fatal,Minor,Minor
+Tripura,Unknown,2020,March,Thursday,16:18,5,Truck,8,0,Stormy,State Highway,Dry,Dusk,Signs,48,45,Male,Expired,Yes,Intersection,Serious,Fatal,Fatal
+Chhattisgarh,Unknown,2021,April,Wednesday,4:39,1,Two-Wheeler,5,2,Foggy,National Highway,Wet,Daylight,Signals,97,69,Male,,No,Bridge,Serious,Serious,Fatal
+Bihar,Unknown,2021,January,Sunday,20:17,3,Bus,9,3,Foggy,National Highway,Wet,Daylight,Signs,40,40,Female,Expired,No,Intersection,Fatal,Serious,Serious
+Sikkim,Unknown,2018,June,Wednesday,1:5,5,Two-Wheeler,5,2,Foggy,National Highway,Dry,Dawn,Signs,105,26,Female,,Yes,Bridge,Serious,Serious,Serious
+Chandigarh,Unknown,2022,December,Saturday,17:58,4,Auto-Rickshaw,7,2,Clear,Urban Road,Dry,Daylight,Police Checkpost,64,67,Male,Expired,No,Straight Road,Serious,Minor,Serious
+Meghalaya,Unknown,2019,October,Thursday,1:39,2,Cycle,6,5,Stormy,National Highway,Dry,Daylight,Police Checkpost,92,56,Female,,Yes,Bridge,Fatal,Fatal,Minor
+West Bengal,Durgapur,2018,September,Thursday,18:31,5,Truck,3,5,Foggy,State Highway,Under Construction,Daylight,,100,18,Male,Valid,No,Curve,Serious,Fatal,Minor
+Uttarakhand,Unknown,2020,August,Saturday,16:24,5,Cycle,7,2,Hazy,Urban Road,Wet,Daylight,Police Checkpost,83,50,Female,Expired,No,Straight Road,Minor,Fatal,Fatal
+Goa,Unknown,2020,January,Friday,4:11,5,Two-Wheeler,9,2,Clear,Urban Road,Wet,Daylight,Signs,49,34,Female,Valid,Yes,Straight Road,Serious,Minor,Fatal
+Karnataka,Mangalore,2019,July,Friday,22:19,2,Truck,3,2,Foggy,National Highway,Under Construction,Daylight,Signals,72,28,Female,Valid,Yes,Bridge,Fatal,Serious,Fatal
+Tamil Nadu,Madurai,2020,June,Saturday,21:55,1,Truck,3,1,Foggy,Urban Road,Wet,Daylight,,58,70,Male,,Yes,Straight Road,Serious,Minor,Fatal
+Chandigarh,Unknown,2018,January,Monday,21:32,5,Cycle,10,0,Hazy,Urban Road,Wet,Daylight,Police Checkpost,59,20,Male,,Yes,Bridge,Minor,Minor,Fatal
+Haryana,Unknown,2023,September,Thursday,16:51,1,Truck,8,0,Stormy,National Highway,Under Construction,Dawn,Police Checkpost,96,40,Female,Valid,No,Straight Road,Fatal,Serious,Serious
+Nagaland,Unknown,2022,March,Friday,20:28,3,Two-Wheeler,0,0,Foggy,National Highway,Wet,Daylight,Signs,64,37,Female,,No,Intersection,Minor,Fatal,Minor
+Kerala,Unknown,2022,August,Wednesday,22:12,4,Truck,4,0,Hazy,Village Road,Under Construction,Dusk,Police Checkpost,62,21,Male,Valid,Yes,Intersection,Minor,Serious,Fatal
+Karnataka,Mysore,2019,July,Wednesday,17:40,3,Cycle,7,0,Clear,National Highway,Wet,Dusk,Signs,47,61,Female,,No,Bridge,Minor,Fatal,Fatal
+West Bengal,Siliguri,2018,September,Friday,8:31,4,Truck,5,0,Stormy,State Highway,Wet,Dusk,,76,26,Male,Expired,Yes,Bridge,Fatal,Serious,Fatal
+Rajasthan,Udaipur,2020,April,Tuesday,5:59,1,Two-Wheeler,4,3,Hazy,Urban Road,Under Construction,Dark,Signals,36,20,Female,,No,Intersection,Fatal,Serious,Fatal
+Chhattisgarh,Unknown,2022,October,Friday,0:30,5,Cycle,7,5,Foggy,National Highway,Under Construction,Dawn,Police Checkpost,55,63,Male,Expired,No,Curve,Serious,Serious,Serious
+Manipur,Unknown,2022,January,Wednesday,17:30,5,Auto-Rickshaw,9,5,Stormy,National Highway,Damaged,Dark,Police Checkpost,48,51,Female,,Yes,Curve,Serious,Fatal,Serious
+Odisha,Unknown,2022,August,Wednesday,1:55,3,Truck,4,0,Foggy,Village Road,Dry,Dusk,Signals,51,30,Female,Valid,No,Straight Road,Serious,Fatal,Serious
+Puducherry,Unknown,2022,January,Sunday,2:13,2,Truck,7,3,Hazy,Village Road,Damaged,Daylight,Signals,34,31,Female,,No,Intersection,Minor,Minor,Minor
+Assam,Unknown,2019,January,Friday,9:37,1,Two-Wheeler,3,5,Rainy,Village Road,Damaged,Daylight,Police Checkpost,118,38,Female,,No,Straight Road,Serious,Serious,Serious
+Delhi,New Delhi,2020,January,Friday,9:56,1,Auto-Rickshaw,0,4,Hazy,State Highway,Under Construction,Dawn,Signals,30,23,Female,Expired,Yes,Straight Road,Minor,Minor,Serious
+Tamil Nadu,Madurai,2022,September,Wednesday,15:18,3,Truck,0,5,Rainy,State Highway,Wet,Dark,Police Checkpost,110,52,Male,Valid,No,Bridge,Minor,Fatal,Minor
+Mizoram,Unknown,2018,March,Monday,3:56,3,Two-Wheeler,6,4,Foggy,National Highway,Under Construction,Dark,Signals,106,29,Male,Expired,No,Curve,Fatal,Fatal,Serious
+Goa,Unknown,2021,May,Thursday,0:14,1,Two-Wheeler,8,2,Stormy,National Highway,Damaged,Dawn,Signals,51,69,Male,Valid,Yes,Straight Road,Minor,Minor,Minor
+Jammu and Kashmir,Unknown,2020,May,Friday,12:27,5,Bus,6,0,Rainy,Village Road,Dry,Dark,Police Checkpost,112,34,Female,,No,Straight Road,Serious,Fatal,Fatal
+Manipur,Unknown,2019,January,Thursday,2:34,5,Pedestrian,6,0,Foggy,Village Road,Dry,Daylight,Signals,30,59,Male,Expired,No,Straight Road,Serious,Minor,Minor
+Uttarakhand,Unknown,2020,December,Friday,21:29,3,Bus,6,0,Clear,Village Road,Damaged,Dark,Signs,39,54,Male,,No,Curve,Fatal,Minor,Fatal
+Tamil Nadu,Coimbatore,2022,November,Friday,19:19,3,Auto-Rickshaw,1,0,Foggy,National Highway,Dry,Dawn,Police Checkpost,61,48,Male,Valid,No,Bridge,Serious,Serious,Serious
+Punjab,Unknown,2023,July,Thursday,12:43,3,Pedestrian,4,5,Rainy,Urban Road,Wet,Dusk,Signs,115,37,Female,Expired,Yes,Straight Road,Minor,Fatal,Minor
+Jammu and Kashmir,Unknown,2023,December,Wednesday,3:51,2,Cycle,9,0,Stormy,National Highway,Under Construction,Dawn,,95,56,Female,Expired,No,Bridge,Fatal,Serious,Fatal
+Jammu and Kashmir,Unknown,2018,September,Saturday,1:49,1,Cycle,4,1,Clear,Urban Road,Damaged,Dark,,71,19,Male,Expired,Yes,Curve,Serious,Fatal,Minor
+Delhi,New Delhi,2018,December,Thursday,0:2,4,Bus,8,3,Hazy,State Highway,Damaged,Daylight,,48,47,Male,,Yes,Curve,Minor,Minor,Serious
+Himachal Pradesh,Unknown,2021,December,Tuesday,16:22,5,Cycle,3,3,Foggy,Urban Road,Damaged,Daylight,Signals,42,26,Female,,Yes,Intersection,Serious,Fatal,Fatal
+Tamil Nadu,Coimbatore,2021,April,Monday,11:23,2,Truck,7,0,Stormy,Urban Road,Wet,Dusk,,30,39,Female,Valid,No,Straight Road,Minor,Fatal,Minor
+Punjab,Unknown,2022,March,Tuesday,20:13,4,Auto-Rickshaw,8,3,Rainy,Village Road,Damaged,Dawn,Signals,32,24,Female,Expired,No,Curve,Minor,Minor,Minor
+Puducherry,Unknown,2018,June,Thursday,3:10,5,Auto-Rickshaw,5,0,Foggy,Urban Road,Damaged,Daylight,Signals,75,38,Female,Valid,Yes,Curve,Fatal,Serious,Serious
+Bihar,Unknown,2023,February,Wednesday,2:50,1,Auto-Rickshaw,9,5,Clear,State Highway,Dry,Dark,,118,24,Female,,Yes,Straight Road,Serious,Fatal,Serious
+Punjab,Unknown,2022,May,Wednesday,9:3,2,Bus,6,3,Foggy,National Highway,Dry,Daylight,Signs,53,44,Female,,Yes,Bridge,Fatal,Fatal,Minor
+Tamil Nadu,Chennai,2019,May,Friday,22:3,3,Bus,10,4,Hazy,National Highway,Wet,Daylight,,35,31,Female,Valid,No,Intersection,Minor,Fatal,Serious
+Telangana,Unknown,2019,May,Thursday,13:55,1,Auto-Rickshaw,1,2,Stormy,Urban Road,Dry,Daylight,Signs,31,48,Female,Valid,Yes,Intersection,Minor,Minor,Fatal
+Jammu and Kashmir,Unknown,2023,December,Tuesday,6:12,3,Cycle,1,2,Foggy,Urban Road,Damaged,Dusk,Signs,107,64,Male,Valid,No,Curve,Serious,Minor,Minor
+Andhra Pradesh,Tirupati,2020,December,Saturday,21:46,2,Cycle,8,4,Stormy,Urban Road,Wet,Dawn,,40,23,Male,Expired,No,Straight Road,Fatal,Fatal,Serious
+Chhattisgarh,Unknown,2021,May,Friday,18:36,4,Truck,4,3,Foggy,Urban Road,Damaged,Dawn,Signs,32,24,Female,Expired,No,Curve,Minor,Minor,Minor
+Puducherry,Unknown,2018,June,Tuesday,8:30,2,Pedestrian,10,2,Foggy,National Highway,Damaged,Dark,,49,67,Female,Valid,No,Straight Road,Minor,Minor,Fatal
+Nagaland,Unknown,2023,September,Saturday,10:23,2,Bus,0,1,Rainy,National Highway,Under Construction,Dark,,71,46,Female,,No,Curve,Minor,Fatal,Fatal
+Mizoram,Unknown,2023,October,Friday,23:46,5,Cycle,10,3,Foggy,National Highway,Under Construction,Daylight,Police Checkpost,96,44,Male,,No,Intersection,Fatal,Serious,Serious
+Assam,Unknown,2023,July,Saturday,1:28,5,Bus,6,4,Stormy,Village Road,Wet,Dawn,,84,57,Male,Valid,Yes,Straight Road,Minor,Fatal,Minor
+Goa,Unknown,2020,June,Sunday,15:50,1,Auto-Rickshaw,8,5,Stormy,Village Road,Wet,Dark,Signals,49,51,Female,Valid,Yes,Curve,Fatal,Minor,Serious
+Tripura,Unknown,2018,March,Thursday,22:38,3,Pedestrian,10,3,Rainy,State Highway,Damaged,Dark,Signs,96,41,Male,Expired,Yes,Bridge,Serious,Minor,Fatal
+Madhya Pradesh,Unknown,2020,September,Friday,17:51,5,Truck,10,5,Hazy,National Highway,Wet,Dawn,Signals,72,19,Female,,No,Straight Road,Serious,Minor,Serious
+Assam,Unknown,2021,August,Sunday,23:25,2,Pedestrian,5,5,Rainy,State Highway,Under Construction,Daylight,,52,51,Female,Expired,No,Curve,Fatal,Serious,Serious
+Uttarakhand,Unknown,2021,June,Tuesday,9:32,3,Two-Wheeler,1,4,Foggy,Village Road,Damaged,Dawn,,72,60,Female,,Yes,Curve,Minor,Minor,Minor
+Manipur,Unknown,2019,June,Sunday,4:38,5,Truck,1,0,Stormy,National Highway,Dry,Dusk,,114,22,Female,Expired,No,Curve,Minor,Serious,Minor
+Jammu and Kashmir,Unknown,2018,March,Monday,7:46,3,Pedestrian,7,3,Foggy,Village Road,Dry,Daylight,Signals,57,70,Female,Expired,No,Intersection,Minor,Minor,Serious
+Karnataka,Mangalore,2019,April,Wednesday,21:11,1,Car,4,2,Rainy,National Highway,Dry,Daylight,Signals,72,48,Male,,Yes,Intersection,Serious,Serious,Serious
+Tamil Nadu,Madurai,2020,June,Thursday,3:45,1,Bus,4,0,Stormy,National Highway,Under Construction,Dark,Signs,107,20,Female,Expired,Yes,Intersection,Fatal,Fatal,Serious
+Kerala,Unknown,2021,December,Friday,17:1,2,Two-Wheeler,10,4,Hazy,National Highway,Dry,Daylight,,100,30,Male,,No,Curve,Serious,Minor,Serious
+Bihar,Unknown,2021,March,Monday,17:14,2,Cycle,8,4,Rainy,National Highway,Damaged,Daylight,,107,70,Male,,No,Intersection,Fatal,Fatal,Minor
+Punjab,Unknown,2019,September,Thursday,0:49,3,Pedestrian,8,0,Hazy,National Highway,Wet,Daylight,,99,29,Male,Expired,Yes,Intersection,Minor,Fatal,Fatal
+Uttar Pradesh,Lucknow,2023,October,Friday,7:31,2,Pedestrian,10,4,Clear,Village Road,Damaged,Dusk,Signals,113,23,Female,Valid,No,Bridge,Fatal,Serious,Minor
+Chhattisgarh,Unknown,2021,October,Sunday,18:38,1,Car,6,0,Foggy,Village Road,Under Construction,Dawn,Signs,105,18,Female,Valid,No,Curve,Serious,Serious,Serious
+Delhi,Rohini,2019,September,Tuesday,15:13,4,Truck,5,0,Stormy,Urban Road,Dry,Dawn,,117,51,Female,Expired,Yes,Curve,Minor,Fatal,Serious
+Himachal Pradesh,Unknown,2019,July,Wednesday,6:56,5,Auto-Rickshaw,2,1,Rainy,National Highway,Dry,Daylight,Signs,60,42,Female,Valid,No,Bridge,Serious,Fatal,Minor
+Nagaland,Unknown,2018,December,Wednesday,23:46,4,Cycle,9,5,Clear,State Highway,Damaged,Dawn,Police Checkpost,104,63,Male,Valid,No,Intersection,Fatal,Minor,Serious
+Goa,Unknown,2018,April,Thursday,15:33,2,Truck,8,2,Clear,Village Road,Under Construction,Daylight,Police Checkpost,75,45,Female,Valid,Yes,Curve,Fatal,Minor,Minor
+Chhattisgarh,Unknown,2022,January,Saturday,5:4,2,Car,5,4,Clear,National Highway,Damaged,Daylight,Signs,105,32,Female,,No,Curve,Serious,Minor,Minor
+Chhattisgarh,Unknown,2022,September,Friday,17:58,3,Pedestrian,8,4,Rainy,Village Road,Under Construction,Dark,Signals,67,35,Male,Valid,No,Intersection,Minor,Fatal,Serious
+Odisha,Unknown,2019,March,Friday,4:31,3,Cycle,8,2,Rainy,State Highway,Dry,Daylight,Signals,50,54,Male,,Yes,Curve,Serious,Serious,Serious
+Chandigarh,Unknown,2018,April,Wednesday,9:55,5,Pedestrian,9,2,Foggy,Urban Road,Damaged,Daylight,,81,54,Male,,No,Straight Road,Minor,Serious,Fatal
+Meghalaya,Unknown,2023,February,Friday,20:36,4,Pedestrian,2,3,Rainy,State Highway,Dry,Dawn,Signs,45,49,Female,Valid,Yes,Intersection,Fatal,Minor,Fatal
+Nagaland,Unknown,2022,December,Thursday,1:48,5,Truck,10,3,Foggy,Village Road,Under Construction,Dawn,Signals,58,51,Male,Valid,Yes,Curve,Minor,Serious,Fatal
+Meghalaya,Unknown,2022,May,Wednesday,6:27,5,Bus,0,3,Hazy,State Highway,Wet,Dawn,Signs,120,53,Female,Expired,No,Intersection,Fatal,Serious,Minor
+Uttarakhand,Unknown,2021,February,Thursday,1:38,3,Truck,3,3,Foggy,Village Road,Wet,Dawn,,45,40,Male,,Yes,Straight Road,Fatal,Serious,Fatal
+Mizoram,Unknown,2018,May,Saturday,11:35,3,Car,6,4,Rainy,National Highway,Damaged,Daylight,Police Checkpost,103,52,Female,,Yes,Bridge,Fatal,Serious,Serious
+Uttar Pradesh,Kanpur,2022,February,Sunday,23:41,4,Truck,3,4,Foggy,Village Road,Damaged,Dawn,Police Checkpost,35,44,Female,Expired,Yes,Curve,Serious,Serious,Serious
+Bihar,Unknown,2021,February,Friday,15:4,2,Car,8,0,Stormy,National Highway,Damaged,Dusk,Signs,32,60,Male,Expired,Yes,Intersection,Serious,Minor,Minor
+Uttarakhand,Unknown,2023,May,Saturday,6:57,5,Auto-Rickshaw,8,0,Rainy,National Highway,Dry,Dusk,Police Checkpost,61,22,Male,,Yes,Intersection,Fatal,Serious,Serious
+Punjab,Unknown,2021,June,Wednesday,0:34,4,Cycle,5,4,Foggy,Urban Road,Wet,Daylight,Signs,116,66,Male,Valid,No,Curve,Serious,Fatal,Fatal
+Chandigarh,Unknown,2020,October,Wednesday,17:6,1,Car,1,1,Rainy,Village Road,Damaged,Dusk,,43,60,Male,Expired,Yes,Curve,Minor,Minor,Minor
+Rajasthan,Jodhpur,2020,November,Sunday,5:47,1,Car,5,2,Hazy,Urban Road,Under Construction,Dark,,86,35,Female,Valid,No,Intersection,Minor,Fatal,Serious
+Chhattisgarh,Unknown,2018,July,Saturday,13:38,2,Two-Wheeler,8,5,Clear,State Highway,Under Construction,Daylight,Signals,65,52,Female,,No,Curve,Serious,Fatal,Serious
+Goa,Unknown,2020,February,Monday,9:39,2,Auto-Rickshaw,9,4,Foggy,Urban Road,Under Construction,Dark,Signals,117,39,Male,Valid,Yes,Curve,Serious,Fatal,Fatal
+Madhya Pradesh,Unknown,2020,March,Wednesday,5:26,2,Auto-Rickshaw,0,2,Stormy,Urban Road,Damaged,Dusk,Signals,61,23,Female,Valid,No,Straight Road,Fatal,Serious,Minor
+Assam,Unknown,2022,November,Friday,20:50,1,Truck,3,0,Stormy,State Highway,Dry,Dark,Signs,111,18,Female,Valid,Yes,Bridge,Minor,Fatal,Serious
+Gujarat,Surat,2021,March,Sunday,2:11,5,Auto-Rickshaw,8,0,Clear,Urban Road,Damaged,Dark,Signals,99,63,Male,,Yes,Intersection,Minor,Minor,Minor
+Jharkhand,Unknown,2020,December,Thursday,13:3,2,Car,10,4,Foggy,National Highway,Damaged,Dark,Signs,112,37,Female,Valid,No,Curve,Minor,Serious,Fatal
+Chhattisgarh,Unknown,2020,January,Tuesday,19:34,5,Cycle,0,2,Rainy,Village Road,Wet,Daylight,Signs,82,48,Male,Valid,Yes,Curve,Fatal,Serious,Minor
+Maharashtra,Mumbai,2019,January,Friday,14:28,3,Car,4,0,Rainy,Village Road,Wet,Dusk,Signals,39,23,Female,Expired,No,Intersection,Minor,Minor,Minor
+Gujarat,Ahmedabad,2021,September,Saturday,21:47,1,Cycle,8,3,Stormy,State Highway,Dry,Daylight,Police Checkpost,109,43,Female,Valid,No,Straight Road,Fatal,Fatal,Serious
+Tamil Nadu,Madurai,2023,February,Friday,23:59,5,Two-Wheeler,2,0,Stormy,Urban Road,Wet,Dusk,,112,41,Male,Valid,No,Bridge,Minor,Minor,Minor
+Gujarat,Surat,2022,February,Tuesday,18:52,1,Bus,9,5,Rainy,State Highway,Damaged,Daylight,Signs,97,30,Female,,No,Bridge,Serious,Fatal,Fatal
+West Bengal,Kolkata,2021,November,Saturday,3:4,2,Two-Wheeler,3,5,Stormy,National Highway,Dry,Dawn,Signals,103,70,Female,Expired,No,Curve,Minor,Serious,Minor
+Chhattisgarh,Unknown,2023,July,Tuesday,21:52,1,Auto-Rickshaw,2,0,Hazy,Village Road,Dry,Dusk,Signals,118,45,Female,,No,Bridge,Fatal,Fatal,Fatal
+Madhya Pradesh,Unknown,2021,June,Wednesday,22:30,4,Auto-Rickshaw,4,2,Clear,National Highway,Under Construction,Dark,,33,57,Male,Valid,Yes,Straight Road,Fatal,Fatal,Fatal
+Nagaland,Unknown,2021,August,Sunday,16:13,5,Bus,1,2,Hazy,State Highway,Damaged,Dark,Signs,55,24,Male,,No,Straight Road,Minor,Serious,Fatal
+Jammu and Kashmir,Unknown,2021,December,Tuesday,17:17,1,Cycle,4,4,Hazy,National Highway,Wet,Daylight,Police Checkpost,43,52,Female,,No,Straight Road,Minor,Fatal,Minor
+Sikkim,Unknown,2023,July,Wednesday,22:21,1,Bus,6,4,Hazy,State Highway,Wet,Dark,Signals,60,47,Male,,No,Intersection,Fatal,Serious,Serious
+Gujarat,Surat,2019,October,Friday,10:23,3,Pedestrian,4,0,Rainy,State Highway,Dry,Daylight,Signals,107,23,Female,Valid,Yes,Straight Road,Serious,Minor,Fatal
+Delhi,Rohini,2018,February,Tuesday,15:58,2,Bus,3,3,Rainy,Urban Road,Dry,Daylight,Signals,81,69,Female,Valid,No,Intersection,Serious,Minor,Minor
+Arunachal Pradesh,Unknown,2022,February,Saturday,6:8,2,Car,5,4,Foggy,Village Road,Wet,Dark,Police Checkpost,47,37,Male,Expired,Yes,Curve,Serious,Serious,Minor
+Kerala,Unknown,2021,December,Monday,0:51,1,Two-Wheeler,4,4,Hazy,State Highway,Under Construction,Daylight,,87,53,Female,,No,Intersection,Fatal,Serious,Serious
+Tripura,Unknown,2023,February,Wednesday,13:20,4,Auto-Rickshaw,0,1,Clear,Village Road,Dry,Dawn,Police Checkpost,69,24,Male,,No,Straight Road,Serious,Minor,Serious
+Kerala,Unknown,2018,January,Saturday,0:16,4,Car,7,3,Stormy,Village Road,Dry,Dark,Signals,113,47,Male,,Yes,Curve,Minor,Serious,Minor
+West Bengal,Siliguri,2018,July,Sunday,3:7,5,Car,5,1,Clear,State Highway,Dry,Dusk,Signals,98,49,Female,,No,Intersection,Fatal,Fatal,Minor
+Rajasthan,Jodhpur,2018,September,Thursday,0:9,1,Two-Wheeler,2,2,Rainy,State Highway,Under Construction,Dusk,Signals,46,60,Male,Valid,Yes,Intersection,Minor,Serious,Serious
+Kerala,Unknown,2019,November,Friday,15:44,3,Cycle,5,0,Hazy,State Highway,Damaged,Dawn,Signals,47,55,Male,Expired,No,Bridge,Minor,Serious,Fatal
+Jammu and Kashmir,Unknown,2021,April,Thursday,4:55,1,Two-Wheeler,5,0,Clear,Urban Road,Dry,Daylight,Signs,85,49,Male,Valid,Yes,Bridge,Fatal,Fatal,Minor
+Haryana,Unknown,2023,April,Sunday,18:53,1,Cycle,9,1,Hazy,Urban Road,Under Construction,Dusk,Police Checkpost,71,54,Female,Valid,Yes,Straight Road,Fatal,Minor,Fatal
+Goa,Unknown,2019,November,Wednesday,21:30,3,Car,8,2,Stormy,State Highway,Wet,Daylight,,114,33,Female,Valid,No,Bridge,Serious,Serious,Serious
+Haryana,Unknown,2022,August,Tuesday,14:25,2,Cycle,5,5,Foggy,National Highway,Wet,Dusk,Signals,110,23,Female,,Yes,Intersection,Minor,Minor,Fatal
+Arunachal Pradesh,Unknown,2019,October,Wednesday,11:26,2,Bus,6,1,Hazy,Urban Road,Wet,Dark,,65,66,Male,,Yes,Straight Road,Serious,Minor,Fatal
+Meghalaya,Unknown,2021,April,Thursday,13:59,5,Pedestrian,5,3,Foggy,Urban Road,Dry,Daylight,,113,56,Male,,Yes,Curve,Minor,Fatal,Minor
+Uttar Pradesh,Varanasi,2022,September,Saturday,15:44,2,Cycle,0,0,Clear,National Highway,Dry,Dark,,92,40,Female,Valid,Yes,Curve,Serious,Fatal,Fatal
+Puducherry,Unknown,2022,January,Saturday,16:13,1,Cycle,3,3,Clear,State Highway,Damaged,Daylight,Signs,75,38,Male,Valid,No,Curve,Minor,Fatal,Serious
+Andhra Pradesh,Visakhapatnam,2021,September,Tuesday,18:56,3,Truck,8,2,Rainy,State Highway,Under Construction,Dawn,Police Checkpost,67,59,Male,,No,Bridge,Fatal,Minor,Fatal
+Bihar,Unknown,2019,March,Saturday,6:4,1,Two-Wheeler,5,1,Stormy,Urban Road,Under Construction,Daylight,Signs,35,62,Female,Valid,No,Intersection,Fatal,Minor,Minor
+Uttar Pradesh,Kanpur,2021,November,Wednesday,17:17,3,Truck,7,3,Hazy,Village Road,Under Construction,Daylight,Signals,64,46,Female,Valid,No,Curve,Minor,Serious,Minor
+Telangana,Unknown,2020,September,Sunday,21:6,1,Truck,5,0,Foggy,Village Road,Damaged,Daylight,Signs,31,60,Female,Expired,Yes,Straight Road,Fatal,Minor,Minor
+Uttar Pradesh,Lucknow,2022,February,Monday,12:37,2,Truck,4,1,Foggy,State Highway,Wet,Dark,Police Checkpost,33,18,Female,Expired,Yes,Straight Road,Serious,Fatal,Serious
+Karnataka,Mangalore,2019,July,Saturday,14:12,4,Cycle,8,0,Stormy,State Highway,Dry,Dusk,Signals,68,50,Female,,Yes,Straight Road,Serious,Fatal,Fatal
+Arunachal Pradesh,Unknown,2021,February,Thursday,21:5,1,Two-Wheeler,3,0,Clear,Village Road,Wet,Dusk,Signals,75,52,Male,,Yes,Straight Road,Serious,Minor,Fatal
+Himachal Pradesh,Unknown,2020,May,Monday,8:2,1,Truck,1,0,Rainy,National Highway,Damaged,Daylight,Signs,68,66,Female,,Yes,Straight Road,Minor,Fatal,Serious
+Manipur,Unknown,2020,August,Sunday,2:36,3,Cycle,1,5,Foggy,Village Road,Dry,Dusk,Police Checkpost,64,59,Female,Valid,No,Curve,Serious,Fatal,Serious
+Mizoram,Unknown,2019,August,Sunday,17:49,4,Auto-Rickshaw,7,3,Rainy,State Highway,Wet,Dusk,Signs,118,38,Female,Expired,Yes,Intersection,Serious,Serious,Serious
+Madhya Pradesh,Unknown,2021,December,Thursday,15:1,1,Auto-Rickshaw,9,3,Rainy,Urban Road,Under Construction,Dusk,Signals,69,30,Male,,No,Curve,Fatal,Minor,Minor
+Chhattisgarh,Unknown,2018,July,Saturday,13:23,1,Pedestrian,6,0,Hazy,State Highway,Dry,Dawn,,65,44,Male,Valid,Yes,Curve,Fatal,Minor,Minor
+Chhattisgarh,Unknown,2018,June,Saturday,10:23,5,Truck,3,1,Rainy,State Highway,Dry,Dusk,Signs,69,65,Male,Valid,Yes,Bridge,Serious,Serious,Fatal
+Chhattisgarh,Unknown,2022,January,Saturday,16:40,1,Car,8,2,Hazy,Village Road,Wet,Dawn,,109,51,Female,Expired,No,Intersection,Serious,Minor,Minor
+Delhi,Rohini,2023,March,Saturday,18:23,3,Bus,0,3,Clear,National Highway,Under Construction,Dark,Signs,96,49,Female,,Yes,Intersection,Minor,Fatal,Serious
+Assam,Unknown,2023,March,Saturday,2:18,5,Car,7,4,Rainy,State Highway,Under Construction,Dark,Signs,57,55,Male,,No,Straight Road,Minor,Minor,Serious
+Arunachal Pradesh,Unknown,2021,September,Sunday,18:22,1,Bus,10,5,Hazy,National Highway,Dry,Daylight,,115,26,Male,Valid,Yes,Intersection,Serious,Fatal,Serious
+Manipur,Unknown,2022,January,Tuesday,10:5,5,Auto-Rickshaw,8,0,Hazy,State Highway,Dry,Dusk,Signs,78,58,Female,Valid,Yes,Intersection,Fatal,Serious,Serious
+Kerala,Unknown,2021,February,Sunday,5:8,1,Bus,4,0,Rainy,Village Road,Under Construction,Dawn,Signs,43,42,Female,Expired,No,Straight Road,Fatal,Fatal,Serious
+Uttarakhand,Unknown,2019,July,Wednesday,19:50,4,Bus,4,5,Hazy,State Highway,Dry,Daylight,Police Checkpost,69,44,Female,Expired,No,Curve,Serious,Serious,Minor
+Haryana,Unknown,2022,March,Friday,22:32,5,Auto-Rickshaw,9,4,Stormy,Urban Road,Damaged,Dawn,,120,21,Female,Valid,Yes,Intersection,Serious,Minor,Minor
+Maharashtra,Nagpur,2018,June,Monday,1:9,4,Cycle,0,3,Foggy,State Highway,Under Construction,Dawn,Signals,72,45,Male,Valid,No,Straight Road,Serious,Fatal,Serious
+Gujarat,Vadodara,2018,January,Thursday,23:43,2,Bus,4,3,Hazy,Urban Road,Damaged,Dawn,Signals,92,63,Male,Valid,No,Intersection,Fatal,Fatal,Fatal
+Nagaland,Unknown,2021,April,Wednesday,22:45,5,Auto-Rickshaw,5,0,Rainy,State Highway,Wet,Dark,Police Checkpost,35,62,Male,Valid,No,Bridge,Fatal,Fatal,Serious
+Odisha,Unknown,2022,February,Wednesday,10:33,4,Bus,2,1,Hazy,State Highway,Dry,Dusk,Signs,89,41,Female,Valid,No,Bridge,Serious,Minor,Fatal
+West Bengal,Durgapur,2021,September,Monday,14:41,2,Pedestrian,3,5,Stormy,National Highway,Dry,Dusk,Police Checkpost,41,61,Male,Expired,Yes,Straight Road,Fatal,Fatal,Serious
+Assam,Unknown,2020,December,Saturday,3:48,2,Pedestrian,0,2,Stormy,National Highway,Damaged,Daylight,Signs,49,60,Female,Valid,No,Intersection,Fatal,Serious,Minor
+Odisha,Unknown,2022,December,Friday,10:46,3,Car,10,3,Rainy,National Highway,Dry,Dusk,Police Checkpost,61,66,Male,Expired,No,Intersection,Minor,Minor,Minor
+Tripura,Unknown,2021,April,Wednesday,1:39,3,Truck,7,5,Rainy,State Highway,Wet,Dark,Police Checkpost,81,58,Male,Expired,No,Straight Road,Minor,Fatal,Fatal
+Telangana,Unknown,2022,April,Sunday,19:7,2,Cycle,0,3,Clear,Village Road,Damaged,Dusk,,118,25,Female,Valid,Yes,Straight Road,Fatal,Serious,Fatal
+Jammu and Kashmir,Unknown,2019,March,Sunday,7:50,1,Car,0,0,Hazy,National Highway,Dry,Daylight,Police Checkpost,50,20,Male,Expired,Yes,Bridge,Serious,Serious,Fatal
+Tamil Nadu,Madurai,2023,January,Sunday,17:11,4,Bus,9,4,Stormy,Village Road,Dry,Daylight,Signals,70,66,Male,Valid,No,Bridge,Minor,Minor,Serious
+Sikkim,Unknown,2018,May,Tuesday,0:17,3,Pedestrian,2,4,Foggy,National Highway,Wet,Daylight,Police Checkpost,76,65,Male,,Yes,Intersection,Minor,Serious,Minor
+Tamil Nadu,Chennai,2022,June,Sunday,16:48,4,Cycle,3,5,Hazy,State Highway,Dry,Daylight,Signals,53,28,Male,,Yes,Curve,Fatal,Serious,Serious
+Andhra Pradesh,Vijayawada,2020,February,Friday,3:57,1,Auto-Rickshaw,0,0,Stormy,National Highway,Wet,Dark,Signs,82,18,Female,,No,Curve,Minor,Serious,Serious
+Mizoram,Unknown,2023,December,Saturday,1:53,3,Two-Wheeler,1,4,Rainy,National Highway,Under Construction,Dawn,,53,50,Female,Valid,Yes,Intersection,Serious,Serious,Serious
+Madhya Pradesh,Unknown,2019,November,Friday,1:19,1,Cycle,1,3,Rainy,Village Road,Under Construction,Dark,Signals,64,25,Female,,No,Bridge,Serious,Serious,Fatal
+Sikkim,Unknown,2022,July,Wednesday,18:2,2,Truck,8,1,Clear,Urban Road,Dry,Dark,,78,22,Male,Valid,No,Curve,Serious,Fatal,Fatal
+Gujarat,Surat,2018,April,Saturday,6:18,3,Bus,1,5,Stormy,State Highway,Under Construction,Dark,Signs,31,40,Male,Valid,Yes,Curve,Minor,Fatal,Fatal
+Uttarakhand,Unknown,2023,March,Saturday,16:36,3,Auto-Rickshaw,10,0,Hazy,National Highway,Under Construction,Dawn,Signs,62,24,Female,,Yes,Straight Road,Serious,Minor,Minor
+Arunachal Pradesh,Unknown,2023,April,Saturday,22:30,4,Pedestrian,5,4,Hazy,Village Road,Under Construction,Daylight,Signs,46,39,Male,,Yes,Intersection,Serious,Fatal,Minor
+Delhi,Dwarka,2018,December,Tuesday,18:52,2,Bus,10,5,Hazy,National Highway,Damaged,Dusk,Signs,109,62,Male,,No,Intersection,Fatal,Serious,Minor
+Himachal Pradesh,Unknown,2021,December,Friday,12:1,1,Auto-Rickshaw,5,3,Hazy,State Highway,Damaged,Dusk,,30,36,Female,,No,Straight Road,Serious,Serious,Fatal
+Gujarat,Ahmedabad,2022,June,Monday,8:18,1,Cycle,1,3,Hazy,Village Road,Dry,Dusk,Signs,102,64,Female,Expired,No,Curve,Fatal,Fatal,Minor
+Odisha,Unknown,2022,March,Friday,17:14,3,Car,5,1,Hazy,Urban Road,Damaged,Dawn,Police Checkpost,51,56,Female,,Yes,Bridge,Fatal,Minor,Minor
+Andhra Pradesh,Vijayawada,2023,October,Wednesday,15:40,1,Car,10,3,Hazy,Urban Road,Damaged,Dusk,,42,68,Male,Expired,No,Intersection,Fatal,Minor,Minor
+Gujarat,Surat,2018,July,Tuesday,5:17,2,Cycle,7,5,Stormy,State Highway,Damaged,Dark,Signs,78,48,Female,,Yes,Straight Road,Minor,Fatal,Minor
+Haryana,Unknown,2023,June,Sunday,9:11,5,Pedestrian,8,2,Clear,Village Road,Under Construction,Daylight,Signals,109,48,Male,,Yes,Curve,Fatal,Minor,Minor
+Arunachal Pradesh,Unknown,2022,August,Tuesday,2:47,4,Truck,0,3,Foggy,Village Road,Wet,Dawn,Signals,103,27,Female,Valid,Yes,Curve,Minor,Serious,Minor
+Nagaland,Unknown,2019,November,Saturday,3:13,5,Pedestrian,1,2,Clear,National Highway,Under Construction,Dawn,,46,37,Male,Valid,Yes,Bridge,Minor,Serious,Fatal
+Odisha,Unknown,2020,October,Friday,13:19,2,Bus,10,4,Rainy,National Highway,Dry,Dawn,Signs,89,25,Female,,Yes,Intersection,Minor,Serious,Minor
+Andhra Pradesh,Tirupati,2023,July,Sunday,16:34,3,Truck,10,3,Hazy,State Highway,Dry,Dark,Signals,40,27,Male,Expired,Yes,Curve,Serious,Fatal,Minor
+Punjab,Unknown,2018,March,Sunday,4:27,5,Truck,1,4,Rainy,National Highway,Damaged,Dawn,Signals,32,28,Female,Valid,No,Intersection,Serious,Serious,Minor
+Himachal Pradesh,Unknown,2023,February,Friday,8:10,2,Auto-Rickshaw,1,3,Rainy,National Highway,Under Construction,Dark,Police Checkpost,115,69,Female,Valid,Yes,Bridge,Serious,Minor,Serious
+Mizoram,Unknown,2019,June,Sunday,8:49,4,Auto-Rickshaw,3,3,Stormy,Urban Road,Wet,Dusk,Signals,32,67,Male,Valid,Yes,Straight Road,Fatal,Minor,Serious
+Uttarakhand,Unknown,2021,February,Monday,10:47,5,Cycle,5,4,Hazy,Urban Road,Dry,Daylight,Signs,78,56,Female,Expired,No,Intersection,Fatal,Fatal,Serious
+Bihar,Unknown,2020,May,Monday,2:0,1,Car,8,4,Foggy,Village Road,Dry,Daylight,Signals,36,18,Female,Expired,Yes,Intersection,Serious,Fatal,Serious
+Tripura,Unknown,2022,November,Sunday,17:12,5,Car,3,1,Clear,National Highway,Wet,Dusk,Signals,77,45,Female,Valid,Yes,Bridge,Serious,Serious,Serious
+West Bengal,Durgapur,2023,December,Monday,16:26,1,Pedestrian,1,1,Rainy,Village Road,Under Construction,Dark,Police Checkpost,106,19,Female,Valid,No,Bridge,Minor,Minor,Minor
+Odisha,Unknown,2020,December,Tuesday,2:3,3,Car,1,2,Hazy,Village Road,Damaged,Dark,Signals,94,64,Female,,No,Bridge,Minor,Minor,Fatal
+Meghalaya,Unknown,2018,July,Friday,6:57,1,Bus,2,5,Clear,Village Road,Under Construction,Dusk,Police Checkpost,69,31,Female,Valid,No,Bridge,Minor,Fatal,Serious
+Meghalaya,Unknown,2022,August,Thursday,11:47,4,Cycle,7,0,Stormy,National Highway,Damaged,Dark,,107,45,Female,Expired,Yes,Straight Road,Minor,Fatal,Minor
+Uttar Pradesh,Lucknow,2018,January,Wednesday,21:30,5,Truck,5,4,Hazy,Urban Road,Dry,Dusk,Signs,92,60,Male,,Yes,Straight Road,Minor,Serious,Serious
+Puducherry,Unknown,2020,October,Friday,18:7,3,Bus,8,3,Clear,Urban Road,Under Construction,Dawn,Signs,89,34,Female,Valid,Yes,Intersection,Serious,Fatal,Fatal
+Bihar,Unknown,2022,May,Tuesday,1:45,4,Car,1,5,Stormy,Village Road,Dry,Dark,Signals,72,40,Female,Valid,Yes,Straight Road,Minor,Minor,Serious
+Karnataka,Bangalore,2022,January,Tuesday,2:8,1,Auto-Rickshaw,10,4,Stormy,National Highway,Wet,Dawn,Signs,47,34,Female,Expired,No,Bridge,Fatal,Minor,Fatal
+West Bengal,Kolkata,2018,August,Thursday,21:29,4,Cycle,5,4,Stormy,State Highway,Under Construction,Dawn,Signs,59,29,Male,,Yes,Straight Road,Minor,Fatal,Fatal
+Rajasthan,Udaipur,2022,February,Tuesday,12:25,4,Car,6,3,Hazy,Urban Road,Under Construction,Dawn,,51,47,Male,,No,Intersection,Serious,Fatal,Minor
+Mizoram,Unknown,2023,June,Thursday,19:53,4,Pedestrian,8,0,Stormy,Village Road,Damaged,Dawn,Police Checkpost,78,31,Female,,Yes,Bridge,Fatal,Serious,Serious
+Jammu and Kashmir,Unknown,2021,May,Monday,1:46,5,Cycle,0,4,Hazy,National Highway,Wet,Dark,Signs,61,66,Male,,Yes,Curve,Serious,Fatal,Minor
+Karnataka,Mangalore,2020,October,Thursday,20:21,2,Bus,1,5,Hazy,State Highway,Under Construction,Dark,Signs,50,44,Male,Expired,No,Straight Road,Serious,Serious,Fatal
+Himachal Pradesh,Unknown,2021,June,Thursday,20:32,2,Auto-Rickshaw,1,0,Rainy,Village Road,Under Construction,Dusk,Signs,54,19,Female,,Yes,Bridge,Minor,Serious,Serious
+Telangana,Unknown,2020,October,Tuesday,8:45,5,Car,6,4,Foggy,Urban Road,Damaged,Dark,Signs,117,20,Male,,No,Bridge,Fatal,Serious,Serious
+Jharkhand,Unknown,2023,November,Monday,19:39,5,Car,2,5,Foggy,Urban Road,Under Construction,Dark,Police Checkpost,90,35,Male,Valid,Yes,Intersection,Fatal,Fatal,Fatal
+Himachal Pradesh,Unknown,2023,September,Sunday,19:16,2,Truck,9,5,Rainy,National Highway,Under Construction,Dusk,Police Checkpost,86,21,Female,Expired,Yes,Straight Road,Minor,Fatal,Minor
+Puducherry,Unknown,2021,February,Sunday,1:47,3,Pedestrian,10,3,Stormy,National Highway,Dry,Dusk,Police Checkpost,67,55,Female,,No,Intersection,Fatal,Minor,Minor
+Assam,Unknown,2019,June,Tuesday,22:0,2,Pedestrian,2,0,Foggy,Village Road,Wet,Dark,Police Checkpost,68,37,Male,Valid,No,Straight Road,Fatal,Serious,Minor
+Rajasthan,Jaipur,2020,October,Monday,12:36,3,Two-Wheeler,7,0,Hazy,National Highway,Under Construction,Dusk,Signs,58,61,Female,Valid,Yes,Intersection,Fatal,Minor,Minor
+Goa,Unknown,2018,January,Tuesday,12:50,4,Two-Wheeler,9,0,Stormy,Village Road,Dry,Dusk,Police Checkpost,50,19,Female,Expired,No,Intersection,Fatal,Minor,Fatal
+Manipur,Unknown,2019,August,Friday,15:47,1,Car,6,3,Clear,Urban Road,Under Construction,Dusk,Signs,57,37,Female,Expired,No,Bridge,Serious,Minor,Minor
+Punjab,Unknown,2018,December,Saturday,21:33,5,Bus,1,0,Stormy,Village Road,Under Construction,Dark,,112,34,Male,Expired,No,Curve,Fatal,Serious,Fatal
+Uttar Pradesh,Kanpur,2021,June,Friday,21:50,1,Cycle,5,4,Clear,Village Road,Wet,Dawn,Police Checkpost,119,58,Male,Expired,Yes,Straight Road,Minor,Serious,Serious
+Bihar,Unknown,2022,January,Tuesday,21:49,1,Car,1,2,Clear,State Highway,Dry,Daylight,Signs,94,40,Female,Valid,Yes,Intersection,Minor,Fatal,Serious
+Jammu and Kashmir,Unknown,2020,January,Monday,21:9,3,Truck,10,2,Stormy,Village Road,Under Construction,Dawn,Police Checkpost,90,56,Male,Expired,Yes,Straight Road,Minor,Minor,Fatal
+West Bengal,Kolkata,2022,November,Saturday,22:31,1,Cycle,7,5,Foggy,National Highway,Dry,Daylight,Signs,111,65,Female,Expired,No,Straight Road,Fatal,Fatal,Fatal
+Delhi,New Delhi,2018,November,Wednesday,9:22,4,Cycle,9,4,Stormy,Village Road,Dry,Dawn,Signals,79,58,Male,Valid,Yes,Curve,Fatal,Serious,Serious
+Tamil Nadu,Coimbatore,2020,April,Sunday,10:19,2,Auto-Rickshaw,1,5,Rainy,Village Road,Dry,Dawn,Signals,73,51,Male,Expired,No,Bridge,Fatal,Serious,Serious
+Kerala,Unknown,2023,July,Saturday,7:11,4,Cycle,2,0,Rainy,National Highway,Dry,Dawn,,96,66,Male,,Yes,Curve,Serious,Fatal,Minor
+Chhattisgarh,Unknown,2018,October,Monday,0:2,2,Auto-Rickshaw,3,0,Stormy,National Highway,Under Construction,Dusk,Signs,112,70,Male,Valid,No,Intersection,Minor,Fatal,Serious
+Meghalaya,Unknown,2023,February,Wednesday,3:23,3,Bus,3,3,Clear,National Highway,Dry,Daylight,Signals,49,30,Female,,Yes,Curve,Serious,Fatal,Serious
+Bihar,Unknown,2021,February,Tuesday,16:31,5,Pedestrian,2,5,Rainy,Urban Road,Damaged,Daylight,Police Checkpost,93,47,Female,Valid,Yes,Intersection,Fatal,Fatal,Minor
+Telangana,Unknown,2023,November,Monday,19:20,4,Cycle,0,2,Foggy,Urban Road,Dry,Dark,Signals,67,27,Female,,Yes,Intersection,Fatal,Fatal,Serious
+West Bengal,Siliguri,2018,October,Wednesday,10:22,2,Car,10,1,Stormy,Village Road,Damaged,Dusk,,86,56,Male,Valid,Yes,Curve,Minor,Fatal,Serious
+Jharkhand,Unknown,2019,October,Wednesday,2:18,5,Two-Wheeler,6,5,Clear,State Highway,Under Construction,Dusk,,64,29,Male,Expired,No,Bridge,Serious,Minor,Serious
+Punjab,Unknown,2023,May,Friday,2:20,3,Truck,0,0,Clear,National Highway,Dry,Dusk,Signs,66,50,Male,,Yes,Intersection,Minor,Minor,Minor
+Uttarakhand,Unknown,2022,February,Sunday,0:35,1,Car,8,1,Stormy,National Highway,Wet,Dark,Police Checkpost,89,20,Male,,No,Intersection,Serious,Minor,Serious
+West Bengal,Siliguri,2021,April,Thursday,22:58,2,Pedestrian,6,2,Rainy,National Highway,Under Construction,Dark,Signs,94,48,Female,Expired,No,Bridge,Serious,Fatal,Serious
+Jharkhand,Unknown,2020,October,Thursday,4:23,1,Bus,9,5,Foggy,National Highway,Damaged,Dusk,Police Checkpost,108,40,Male,Expired,Yes,Straight Road,Serious,Fatal,Minor
+Rajasthan,Udaipur,2021,June,Sunday,12:23,1,Auto-Rickshaw,2,1,Clear,State Highway,Under Construction,Dusk,Signs,80,34,Female,Expired,Yes,Intersection,Minor,Serious,Serious
+Sikkim,Unknown,2020,April,Saturday,4:9,5,Pedestrian,5,2,Stormy,State Highway,Under Construction,Dark,Police Checkpost,120,40,Female,,No,Bridge,Minor,Serious,Minor
+Tamil Nadu,Coimbatore,2020,July,Tuesday,11:50,2,Two-Wheeler,5,1,Stormy,State Highway,Dry,Dawn,Signals,46,18,Female,Expired,Yes,Bridge,Fatal,Fatal,Fatal
+Karnataka,Bangalore,2019,July,Tuesday,5:40,5,Truck,5,0,Clear,Village Road,Damaged,Dark,Signs,52,36,Male,Expired,Yes,Straight Road,Minor,Minor,Minor
+Karnataka,Mysore,2020,February,Friday,23:22,5,Car,1,3,Foggy,Village Road,Wet,Dawn,Signals,45,66,Female,Expired,No,Straight Road,Minor,Serious,Serious
+Uttarakhand,Unknown,2019,July,Wednesday,0:19,5,Pedestrian,0,4,Clear,National Highway,Wet,Dusk,,108,34,Male,Expired,No,Bridge,Fatal,Minor,Fatal
+Punjab,Unknown,2021,February,Saturday,0:23,4,Cycle,8,4,Hazy,Urban Road,Under Construction,Dusk,Signs,71,56,Male,Valid,No,Bridge,Fatal,Serious,Minor
+Chandigarh,Unknown,2018,November,Sunday,7:10,5,Auto-Rickshaw,7,0,Foggy,Village Road,Under Construction,Dusk,Signs,54,19,Male,Expired,Yes,Intersection,Serious,Serious,Fatal
+Jammu and Kashmir,Unknown,2021,May,Wednesday,22:43,4,Bus,5,1,Clear,National Highway,Wet,Dusk,Signals,30,62,Male,Valid,No,Straight Road,Fatal,Minor,Fatal
+Chandigarh,Unknown,2018,March,Wednesday,20:2,2,Two-Wheeler,1,3,Clear,National Highway,Wet,Dusk,,92,21,Male,Expired,Yes,Straight Road,Serious,Serious,Fatal
+Jammu and Kashmir,Unknown,2022,February,Sunday,22:42,1,Bus,0,2,Foggy,Urban Road,Damaged,Dawn,Police Checkpost,114,38,Male,Valid,No,Curve,Serious,Fatal,Fatal
+Meghalaya,Unknown,2023,November,Wednesday,1:34,5,Truck,8,1,Foggy,Urban Road,Under Construction,Dawn,Signals,81,58,Male,,Yes,Bridge,Minor,Serious,Serious
+Goa,Unknown,2021,January,Friday,0:32,2,Auto-Rickshaw,4,1,Foggy,State Highway,Dry,Daylight,Signals,107,51,Male,,Yes,Intersection,Minor,Fatal,Fatal
+Gujarat,Vadodara,2021,April,Wednesday,5:56,5,Bus,7,3,Rainy,Village Road,Wet,Dark,Police Checkpost,33,43,Female,Expired,Yes,Straight Road,Serious,Fatal,Fatal
+Jharkhand,Unknown,2023,March,Saturday,7:47,5,Pedestrian,6,3,Foggy,National Highway,Under Construction,Dawn,Signals,59,42,Male,,No,Curve,Fatal,Minor,Minor
+Arunachal Pradesh,Unknown,2019,October,Tuesday,19:51,4,Car,3,3,Clear,State Highway,Damaged,Daylight,,90,62,Male,Valid,Yes,Straight Road,Minor,Fatal,Fatal
+Tamil Nadu,Chennai,2022,November,Tuesday,4:4,1,Truck,0,0,Foggy,State Highway,Dry,Dawn,Police Checkpost,38,22,Male,Expired,Yes,Bridge,Serious,Serious,Fatal
+Rajasthan,Jodhpur,2022,July,Sunday,10:2,5,Auto-Rickshaw,10,1,Rainy,Urban Road,Dry,Daylight,,55,31,Female,,Yes,Straight Road,Serious,Fatal,Minor
+Nagaland,Unknown,2021,January,Wednesday,14:19,1,Two-Wheeler,2,1,Foggy,State Highway,Dry,Daylight,Signals,38,69,Female,Valid,No,Intersection,Minor,Fatal,Minor
+Nagaland,Unknown,2021,April,Monday,11:47,2,Two-Wheeler,3,1,Clear,State Highway,Dry,Daylight,Signs,30,66,Female,Valid,Yes,Straight Road,Fatal,Fatal,Minor
+Maharashtra,Mumbai,2018,December,Monday,13:5,1,Bus,8,1,Stormy,National Highway,Damaged,Daylight,Signs,55,45,Male,,Yes,Curve,Serious,Fatal,Minor
+Chandigarh,Unknown,2019,June,Thursday,3:23,4,Bus,6,4,Rainy,Urban Road,Damaged,Daylight,Signals,67,68,Female,,Yes,Straight Road,Serious,Minor,Minor
+Assam,Unknown,2022,November,Saturday,7:50,5,Two-Wheeler,8,2,Foggy,National Highway,Damaged,Daylight,,54,43,Female,,Yes,Intersection,Minor,Serious,Fatal
+Meghalaya,Unknown,2018,October,Saturday,14:17,1,Pedestrian,9,1,Rainy,State Highway,Dry,Dark,Police Checkpost,57,29,Female,,No,Intersection,Minor,Minor,Fatal
+Manipur,Unknown,2022,August,Sunday,14:5,3,Two-Wheeler,10,4,Stormy,Urban Road,Damaged,Dawn,Signals,93,70,Female,Expired,Yes,Intersection,Fatal,Minor,Fatal
+Gujarat,Ahmedabad,2019,March,Saturday,17:47,4,Auto-Rickshaw,4,3,Hazy,State Highway,Wet,Dusk,Police Checkpost,84,47,Female,,No,Intersection,Serious,Minor,Serious
+Puducherry,Unknown,2018,January,Thursday,21:50,3,Auto-Rickshaw,5,3,Clear,National Highway,Under Construction,Dusk,Police Checkpost,95,21,Female,Expired,Yes,Curve,Fatal,Minor,Serious
+Telangana,Unknown,2023,December,Tuesday,10:25,5,Auto-Rickshaw,7,3,Clear,Village Road,Dry,Dark,Signs,58,62,Male,Valid,No,Straight Road,Serious,Minor,Serious
+Maharashtra,Nagpur,2023,July,Wednesday,2:5,3,Auto-Rickshaw,3,2,Rainy,State Highway,Wet,Dark,Police Checkpost,73,44,Male,,No,Curve,Minor,Minor,Serious
+Bihar,Unknown,2022,September,Tuesday,23:9,1,Pedestrian,10,4,Hazy,State Highway,Under Construction,Dark,Police Checkpost,57,56,Female,Valid,Yes,Curve,Fatal,Fatal,Fatal
+Delhi,Rohini,2020,May,Friday,18:3,5,Bus,0,1,Stormy,Village Road,Under Construction,Dusk,,83,40,Male,Expired,Yes,Straight Road,Minor,Minor,Fatal
+Uttar Pradesh,Varanasi,2022,April,Friday,5:38,4,Truck,8,5,Rainy,Village Road,Under Construction,Dawn,Police Checkpost,111,21,Male,,No,Bridge,Fatal,Minor,Serious
+Manipur,Unknown,2019,December,Monday,12:15,3,Truck,3,2,Hazy,Urban Road,Under Construction,Dusk,Signs,46,64,Female,,Yes,Intersection,Fatal,Minor,Serious
+Jammu and Kashmir,Unknown,2023,February,Wednesday,9:48,3,Truck,0,3,Stormy,Village Road,Wet,Dusk,Signs,61,61,Male,Valid,No,Straight Road,Serious,Minor,Minor
+Himachal Pradesh,Unknown,2019,September,Wednesday,18:52,4,Pedestrian,1,3,Rainy,Urban Road,Wet,Daylight,,109,66,Male,Valid,Yes,Curve,Minor,Fatal,Serious
+Haryana,Unknown,2019,November,Saturday,23:41,2,Auto-Rickshaw,7,5,Clear,State Highway,Wet,Dawn,Signs,47,51,Male,Valid,Yes,Intersection,Serious,Serious,Serious
+Chhattisgarh,Unknown,2021,November,Wednesday,9:16,1,Cycle,8,2,Stormy,Village Road,Dry,Daylight,Signals,99,56,Male,Expired,No,Bridge,Fatal,Serious,Serious
+Nagaland,Unknown,2018,January,Thursday,13:18,3,Auto-Rickshaw,1,3,Foggy,Village Road,Damaged,Dusk,Signs,44,65,Male,,No,Intersection,Fatal,Serious,Minor
+Tamil Nadu,Chennai,2021,September,Sunday,14:48,1,Pedestrian,8,3,Stormy,Urban Road,Damaged,Daylight,Police Checkpost,63,45,Female,Expired,Yes,Intersection,Fatal,Fatal,Minor
+Jammu and Kashmir,Unknown,2023,June,Sunday,23:53,3,Auto-Rickshaw,5,1,Foggy,National Highway,Under Construction,Dark,,70,56,Male,,Yes,Bridge,Fatal,Serious,Fatal
+Jammu and Kashmir,Unknown,2022,January,Saturday,2:23,4,Two-Wheeler,3,5,Hazy,National Highway,Under Construction,Dusk,Police Checkpost,103,29,Male,Expired,No,Curve,Serious,Minor,Serious
+Telangana,Unknown,2021,March,Saturday,10:31,1,Pedestrian,1,0,Foggy,Village Road,Damaged,Dusk,Signals,41,52,Male,,No,Bridge,Fatal,Minor,Minor
+Bihar,Unknown,2020,March,Tuesday,9:11,3,Two-Wheeler,9,1,Hazy,Village Road,Damaged,Dawn,Signals,88,20,Female,,No,Intersection,Serious,Minor,Minor
+Chandigarh,Unknown,2023,March,Saturday,8:19,4,Auto-Rickshaw,6,0,Hazy,National Highway,Under Construction,Dusk,Police Checkpost,56,38,Female,Expired,Yes,Straight Road,Serious,Fatal,Serious
+Nagaland,Unknown,2023,October,Tuesday,13:25,4,Auto-Rickshaw,9,5,Stormy,Urban Road,Dry,Dark,Police Checkpost,106,31,Male,Expired,Yes,Straight Road,Fatal,Fatal,Minor
+Delhi,Dwarka,2022,March,Sunday,17:14,4,Auto-Rickshaw,8,2,Foggy,National Highway,Dry,Daylight,,61,35,Male,,No,Straight Road,Minor,Fatal,Minor
+Mizoram,Unknown,2021,December,Sunday,2:1,4,Bus,4,2,Hazy,State Highway,Wet,Dusk,Police Checkpost,72,32,Female,,Yes,Curve,Fatal,Serious,Fatal
+Assam,Unknown,2020,December,Sunday,8:21,5,Pedestrian,8,1,Hazy,National Highway,Under Construction,Dusk,Signs,51,55,Male,Valid,No,Intersection,Fatal,Serious,Serious
+Maharashtra,Pune,2022,February,Wednesday,11:27,5,Car,6,2,Stormy,State Highway,Wet,Dawn,,44,36,Female,Expired,Yes,Intersection,Fatal,Minor,Fatal
+Puducherry,Unknown,2021,March,Thursday,8:36,4,Bus,3,5,Hazy,Urban Road,Under Construction,Daylight,Police Checkpost,84,49,Male,Expired,Yes,Bridge,Fatal,Fatal,Minor
+Madhya Pradesh,Unknown,2020,January,Sunday,20:5,4,Two-Wheeler,7,5,Clear,National Highway,Under Construction,Dawn,Signs,81,35,Female,,Yes,Straight Road,Minor,Serious,Minor
+Haryana,Unknown,2023,November,Monday,6:32,3,Pedestrian,0,5,Foggy,Urban Road,Wet,Dark,Signs,106,58,Female,Valid,No,Bridge,Minor,Serious,Serious
+Puducherry,Unknown,2023,January,Thursday,8:53,5,Two-Wheeler,9,4,Rainy,Village Road,Damaged,Daylight,Police Checkpost,76,26,Male,,No,Bridge,Fatal,Minor,Fatal
+Madhya Pradesh,Unknown,2021,March,Friday,9:51,5,Car,5,0,Foggy,Village Road,Wet,Dark,Signals,92,32,Female,Expired,Yes,Straight Road,Serious,Serious,Serious
+Odisha,Unknown,2018,October,Sunday,22:40,4,Car,7,1,Hazy,Village Road,Damaged,Dawn,Police Checkpost,73,64,Female,Valid,Yes,Bridge,Serious,Serious,Fatal
+Haryana,Unknown,2019,October,Wednesday,18:54,2,Two-Wheeler,8,2,Foggy,National Highway,Under Construction,Dark,Signs,67,64,Male,,No,Intersection,Serious,Serious,Minor
+Sikkim,Unknown,2020,February,Monday,20:27,2,Truck,7,0,Foggy,State Highway,Dry,Dawn,Signals,54,57,Male,Valid,No,Straight Road,Serious,Fatal,Fatal
+Chhattisgarh,Unknown,2023,September,Sunday,11:27,4,Cycle,0,1,Rainy,Urban Road,Wet,Dawn,Signs,77,62,Female,Valid,No,Bridge,Fatal,Fatal,Minor
+Mizoram,Unknown,2020,January,Thursday,13:35,5,Pedestrian,8,2,Clear,Urban Road,Under Construction,Dusk,Signals,115,56,Female,,Yes,Curve,Minor,Minor,Fatal
+Punjab,Unknown,2018,August,Tuesday,7:41,4,Pedestrian,1,2,Foggy,Village Road,Damaged,Dawn,,30,69,Male,Expired,Yes,Intersection,Serious,Minor,Minor
+Meghalaya,Unknown,2023,March,Monday,7:38,4,Pedestrian,2,5,Stormy,State Highway,Wet,Dark,Signs,83,59,Female,Expired,No,Bridge,Serious,Serious,Fatal
+Delhi,Dwarka,2021,March,Thursday,14:16,2,Auto-Rickshaw,3,0,Clear,Village Road,Dry,Daylight,Signs,76,31,Female,Valid,No,Intersection,Serious,Minor,Minor
+Jammu and Kashmir,Unknown,2020,December,Sunday,12:27,1,Pedestrian,7,1,Hazy,State Highway,Damaged,Dawn,Signs,106,42,Female,Valid,Yes,Bridge,Serious,Serious,Fatal
+Odisha,Unknown,2018,August,Thursday,19:30,2,Two-Wheeler,3,5,Rainy,National Highway,Wet,Daylight,Police Checkpost,59,27,Male,Valid,Yes,Straight Road,Fatal,Minor,Serious
+Delhi,Rohini,2021,January,Wednesday,1:38,4,Cycle,8,3,Stormy,State Highway,Under Construction,Dark,Signals,77,67,Male,Valid,No,Intersection,Fatal,Fatal,Fatal
+Haryana,Unknown,2023,November,Friday,6:15,4,Bus,3,2,Stormy,Village Road,Wet,Dawn,Signals,64,31,Female,Expired,No,Curve,Minor,Serious,Serious
+Puducherry,Unknown,2022,June,Saturday,23:43,5,Auto-Rickshaw,2,0,Clear,State Highway,Dry,Dark,Signals,78,58,Female,Valid,No,Straight Road,Minor,Minor,Fatal
+Nagaland,Unknown,2023,February,Thursday,4:25,1,Bus,9,5,Clear,State Highway,Dry,Dark,Signals,81,46,Male,Expired,Yes,Curve,Serious,Fatal,Fatal
+Tamil Nadu,Chennai,2021,March,Tuesday,10:28,2,Auto-Rickshaw,2,4,Rainy,Urban Road,Dry,Dusk,,45,64,Male,Expired,No,Straight Road,Fatal,Minor,Fatal
+Uttarakhand,Unknown,2021,May,Monday,8:36,2,Car,9,3,Stormy,State Highway,Under Construction,Daylight,Signs,41,46,Female,Valid,Yes,Intersection,Serious,Minor,Minor
+Odisha,Unknown,2023,January,Friday,6:9,3,Two-Wheeler,9,0,Foggy,Urban Road,Dry,Dawn,Police Checkpost,36,54,Female,Expired,Yes,Curve,Minor,Fatal,Minor
+Chandigarh,Unknown,2023,January,Saturday,19:53,3,Cycle,1,2,Hazy,Urban Road,Under Construction,Dawn,Police Checkpost,67,36,Female,Expired,No,Curve,Serious,Fatal,Minor
+Delhi,Dwarka,2023,October,Tuesday,0:28,1,Car,10,5,Hazy,Village Road,Damaged,Daylight,Police Checkpost,115,56,Female,,Yes,Intersection,Serious,Serious,Serious
+Punjab,Unknown,2021,March,Thursday,22:6,5,Truck,5,3,Hazy,National Highway,Damaged,Daylight,,50,45,Female,Expired,Yes,Intersection,Serious,Minor,Fatal
+Manipur,Unknown,2020,June,Friday,15:56,4,Pedestrian,3,5,Foggy,National Highway,Wet,Dark,Signals,42,36,Male,,No,Straight Road,Serious,Serious,Serious
+Delhi,New Delhi,2021,February,Thursday,18:19,2,Two-Wheeler,7,0,Clear,State Highway,Wet,Dusk,Police Checkpost,72,20,Female,,No,Intersection,Minor,Serious,Serious
+Maharashtra,Pune,2018,November,Tuesday,0:40,4,Auto-Rickshaw,4,0,Hazy,Village Road,Wet,Dusk,Police Checkpost,113,55,Female,Valid,Yes,Intersection,Fatal,Serious,Fatal
+Manipur,Unknown,2019,February,Sunday,11:27,3,Cycle,3,0,Rainy,Village Road,Under Construction,Daylight,Signs,108,24,Female,Expired,Yes,Curve,Fatal,Minor,Minor
+Telangana,Unknown,2023,January,Monday,7:41,1,Car,1,1,Hazy,State Highway,Dry,Daylight,Signals,75,38,Female,,No,Intersection,Minor,Fatal,Minor
+Rajasthan,Jaipur,2022,August,Tuesday,4:24,2,Pedestrian,4,4,Clear,State Highway,Under Construction,Dark,Signs,107,24,Female,Valid,No,Straight Road,Minor,Fatal,Fatal
+Goa,Unknown,2021,December,Thursday,15:7,4,Pedestrian,5,3,Stormy,Village Road,Wet,Dark,Signs,59,64,Male,,No,Straight Road,Minor,Serious,Minor
+Tamil Nadu,Chennai,2021,January,Sunday,1:15,5,Truck,4,3,Foggy,National Highway,Wet,Dark,Signs,74,43,Male,Expired,Yes,Intersection,Minor,Serious,Serious
+Bihar,Unknown,2021,March,Saturday,3:0,4,Two-Wheeler,4,2,Foggy,State Highway,Damaged,Dark,Signs,72,58,Female,Expired,No,Straight Road,Minor,Fatal,Fatal
+Uttarakhand,Unknown,2023,December,Sunday,13:2,2,Two-Wheeler,9,2,Stormy,Urban Road,Under Construction,Daylight,Signs,87,40,Female,Expired,No,Straight Road,Minor,Fatal,Fatal
+Meghalaya,Unknown,2021,September,Friday,9:1,2,Truck,10,3,Stormy,National Highway,Dry,Dark,,35,48,Male,,No,Bridge,Serious,Serious,Fatal
+West Bengal,Durgapur,2020,November,Thursday,6:19,1,Pedestrian,2,0,Stormy,Urban Road,Wet,Dark,,32,23,Female,,No,Bridge,Minor,Fatal,Fatal
+Odisha,Unknown,2019,September,Sunday,20:20,5,Two-Wheeler,10,3,Stormy,Urban Road,Dry,Dawn,Signals,95,60,Male,,Yes,Intersection,Serious,Minor,Minor
+Chandigarh,Unknown,2020,March,Wednesday,6:11,1,Two-Wheeler,1,4,Stormy,National Highway,Damaged,Dusk,Signs,66,30,Female,Expired,No,Straight Road,Serious,Serious,Minor
+Mizoram,Unknown,2023,June,Thursday,8:19,4,Two-Wheeler,5,1,Rainy,Urban Road,Under Construction,Dark,Police Checkpost,72,65,Female,Valid,Yes,Curve,Minor,Fatal,Serious
+Assam,Unknown,2023,September,Saturday,4:13,4,Car,4,2,Foggy,Urban Road,Dry,Dark,Signals,44,46,Male,,Yes,Straight Road,Minor,Minor,Fatal
+Rajasthan,Jaipur,2021,February,Monday,21:37,3,Truck,8,5,Foggy,Urban Road,Dry,Dusk,Signals,94,19,Male,,Yes,Curve,Serious,Serious,Fatal
+Kerala,Unknown,2019,March,Wednesday,10:44,4,Truck,10,2,Rainy,National Highway,Dry,Dawn,,52,63,Female,Expired,Yes,Bridge,Fatal,Fatal,Fatal
+Telangana,Unknown,2022,July,Friday,20:32,5,Auto-Rickshaw,3,0,Hazy,National Highway,Under Construction,Dark,Police Checkpost,77,53,Female,Expired,No,Bridge,Fatal,Minor,Serious
+Gujarat,Vadodara,2021,June,Tuesday,22:28,2,Cycle,2,3,Foggy,Village Road,Dry,Dusk,Police Checkpost,41,63,Female,Valid,No,Straight Road,Fatal,Fatal,Minor
+Assam,Unknown,2021,June,Tuesday,8:7,4,Two-Wheeler,4,3,Stormy,National Highway,Wet,Dusk,Signals,87,50,Female,Valid,No,Curve,Minor,Serious,Serious
+Odisha,Unknown,2020,May,Wednesday,5:28,5,Auto-Rickshaw,8,5,Rainy,State Highway,Under Construction,Dawn,,83,38,Male,Expired,No,Bridge,Minor,Minor,Serious
+Chhattisgarh,Unknown,2022,July,Saturday,18:8,1,Auto-Rickshaw,9,1,Foggy,Urban Road,Under Construction,Daylight,Police Checkpost,83,33,Female,Expired,No,Intersection,Fatal,Fatal,Minor
+Delhi,Rohini,2020,March,Saturday,15:3,3,Auto-Rickshaw,1,5,Clear,State Highway,Dry,Dawn,Signals,97,46,Female,,No,Straight Road,Serious,Minor,Minor
+Meghalaya,Unknown,2018,February,Wednesday,6:21,4,Cycle,0,3,Stormy,National Highway,Wet,Daylight,Signs,32,39,Male,Expired,No,Intersection,Minor,Fatal,Fatal
+Telangana,Unknown,2022,March,Sunday,9:30,3,Auto-Rickshaw,10,2,Stormy,Village Road,Dry,Dawn,Signs,82,60,Male,,No,Bridge,Serious,Minor,Serious
+Assam,Unknown,2019,November,Wednesday,13:2,4,Cycle,5,3,Hazy,National Highway,Dry,Dusk,Police Checkpost,65,18,Male,Valid,No,Bridge,Serious,Serious,Serious
+Arunachal Pradesh,Unknown,2022,October,Friday,7:30,5,Bus,7,3,Clear,Village Road,Under Construction,Dark,Signals,87,29,Male,Valid,No,Intersection,Serious,Fatal,Fatal
+Andhra Pradesh,Vijayawada,2021,April,Tuesday,5:52,3,Two-Wheeler,4,0,Clear,State Highway,Damaged,Dawn,Signs,60,31,Female,,No,Straight Road,Fatal,Minor,Serious
+Himachal Pradesh,Unknown,2020,July,Monday,19:19,5,Cycle,5,5,Stormy,Village Road,Dry,Dark,Police Checkpost,61,69,Male,Valid,Yes,Curve,Serious,Minor,Serious
+Sikkim,Unknown,2023,June,Friday,0:11,5,Cycle,4,5,Foggy,State Highway,Wet,Daylight,Police Checkpost,43,55,Male,,No,Curve,Minor,Fatal,Serious
+Tamil Nadu,Madurai,2021,May,Wednesday,21:47,4,Bus,4,1,Clear,National Highway,Damaged,Dawn,Signals,40,70,Female,Expired,No,Intersection,Minor,Serious,Minor
+Tripura,Unknown,2018,July,Thursday,12:28,5,Auto-Rickshaw,1,0,Foggy,National Highway,Damaged,Dawn,,38,49,Female,,No,Intersection,Fatal,Minor,Fatal
+Tripura,Unknown,2019,November,Saturday,20:50,2,Two-Wheeler,9,3,Rainy,National Highway,Damaged,Dusk,Police Checkpost,69,29,Male,Valid,No,Straight Road,Minor,Serious,Serious
+Himachal Pradesh,Unknown,2022,December,Wednesday,11:40,3,Truck,1,5,Clear,State Highway,Damaged,Dark,Police Checkpost,62,42,Female,Valid,No,Curve,Minor,Minor,Fatal
+Madhya Pradesh,Unknown,2021,May,Monday,23:56,3,Cycle,9,5,Rainy,Village Road,Wet,Dawn,Signals,104,22,Male,Expired,Yes,Bridge,Fatal,Serious,Minor
+Chandigarh,Unknown,2023,May,Tuesday,16:59,4,Two-Wheeler,3,4,Clear,National Highway,Dry,Daylight,Signs,44,25,Female,Valid,Yes,Bridge,Minor,Serious,Minor
+Goa,Unknown,2018,February,Saturday,15:1,3,Auto-Rickshaw,0,4,Clear,Village Road,Damaged,Dawn,,35,23,Female,,Yes,Curve,Fatal,Minor,Minor
+Arunachal Pradesh,Unknown,2019,November,Sunday,20:56,2,Pedestrian,3,2,Clear,National Highway,Wet,Daylight,Signals,50,54,Male,Expired,Yes,Bridge,Serious,Serious,Minor
+Odisha,Unknown,2022,June,Tuesday,22:37,1,Truck,9,4,Rainy,Urban Road,Wet,Daylight,Police Checkpost,111,30,Female,Valid,No,Intersection,Fatal,Serious,Serious
+Delhi,Rohini,2018,October,Saturday,9:29,3,Bus,5,0,Clear,State Highway,Dry,Daylight,,31,30,Female,Valid,No,Intersection,Fatal,Serious,Serious
+Sikkim,Unknown,2023,June,Monday,6:5,4,Pedestrian,8,3,Stormy,National Highway,Wet,Dawn,,93,38,Female,Valid,Yes,Curve,Fatal,Serious,Serious
+Sikkim,Unknown,2020,February,Wednesday,18:11,4,Cycle,3,4,Hazy,State Highway,Under Construction,Dawn,,92,26,Male,,Yes,Bridge,Fatal,Serious,Serious
+Kerala,Unknown,2020,May,Friday,3:47,4,Bus,5,4,Clear,Urban Road,Damaged,Dawn,Signs,110,26,Female,Valid,No,Bridge,Serious,Minor,Fatal
+West Bengal,Siliguri,2021,November,Sunday,11:38,5,Auto-Rickshaw,5,0,Stormy,State Highway,Damaged,Dawn,Police Checkpost,108,64,Male,Valid,Yes,Straight Road,Fatal,Serious,Serious
+Delhi,New Delhi,2018,September,Monday,20:24,5,Two-Wheeler,6,4,Foggy,National Highway,Dry,Dusk,Signals,104,45,Male,Valid,Yes,Intersection,Serious,Serious,Fatal
+Gujarat,Ahmedabad,2019,December,Wednesday,0:26,4,Two-Wheeler,3,5,Rainy,State Highway,Wet,Dusk,,61,51,Female,,No,Intersection,Fatal,Minor,Minor
+Uttarakhand,Unknown,2023,June,Tuesday,17:54,2,Auto-Rickshaw,2,3,Foggy,State Highway,Wet,Dark,,85,29,Female,Expired,Yes,Curve,Minor,Fatal,Minor
+Telangana,Unknown,2020,October,Thursday,23:44,5,Cycle,3,3,Foggy,National Highway,Dry,Dusk,Signals,43,28,Male,Expired,Yes,Bridge,Minor,Serious,Minor
+Punjab,Unknown,2018,July,Thursday,5:6,5,Truck,1,2,Clear,Urban Road,Wet,Dark,Signs,120,24,Female,,Yes,Bridge,Minor,Fatal,Serious
+Uttar Pradesh,Lucknow,2019,February,Monday,11:49,1,Cycle,9,0,Hazy,National Highway,Under Construction,Dusk,Signs,105,61,Female,Valid,No,Intersection,Minor,Fatal,Fatal
+Maharashtra,Pune,2018,July,Saturday,8:57,3,Car,10,4,Stormy,National Highway,Damaged,Dawn,Signals,42,54,Female,Expired,No,Bridge,Minor,Fatal,Minor
+Uttarakhand,Unknown,2020,June,Monday,13:34,1,Auto-Rickshaw,3,0,Hazy,Urban Road,Under Construction,Dawn,Police Checkpost,50,29,Female,Expired,Yes,Curve,Fatal,Minor,Serious
+Telangana,Unknown,2021,September,Thursday,21:57,2,Auto-Rickshaw,5,5,Clear,National Highway,Dry,Dusk,Signals,120,43,Male,,No,Straight Road,Fatal,Fatal,Serious
+Sikkim,Unknown,2018,August,Thursday,8:26,4,Auto-Rickshaw,3,1,Clear,Village Road,Wet,Dark,,48,29,Female,Valid,Yes,Bridge,Minor,Serious,Minor
+Delhi,New Delhi,2020,August,Wednesday,1:50,2,Cycle,2,2,Foggy,Village Road,Under Construction,Dusk,Signals,96,26,Male,Valid,Yes,Intersection,Fatal,Fatal,Serious
+Gujarat,Vadodara,2023,September,Monday,17:41,1,Auto-Rickshaw,7,5,Clear,National Highway,Damaged,Dusk,,99,53,Female,Valid,Yes,Curve,Minor,Fatal,Fatal
+Madhya Pradesh,Unknown,2018,March,Wednesday,1:25,1,Truck,1,4,Clear,State Highway,Dry,Dusk,Police Checkpost,103,21,Female,,No,Bridge,Serious,Fatal,Serious
+Puducherry,Unknown,2022,February,Wednesday,1:35,2,Car,10,3,Hazy,Urban Road,Dry,Dusk,Signs,55,41,Female,Valid,No,Straight Road,Serious,Fatal,Fatal
+Uttarakhand,Unknown,2021,May,Thursday,5:29,2,Bus,2,2,Stormy,Village Road,Damaged,Daylight,Signals,86,27,Male,Valid,Yes,Straight Road,Fatal,Fatal,Minor
+Arunachal Pradesh,Unknown,2021,June,Thursday,5:27,2,Truck,6,2,Hazy,Urban Road,Dry,Dark,Police Checkpost,81,70,Female,,Yes,Bridge,Serious,Minor,Fatal
+Uttar Pradesh,Varanasi,2019,March,Tuesday,1:22,5,Bus,0,5,Foggy,Urban Road,Under Construction,Dark,Signals,76,53,Female,,Yes,Curve,Minor,Minor,Minor
+Chandigarh,Unknown,2021,December,Sunday,15:44,2,Two-Wheeler,1,0,Foggy,State Highway,Dry,Dawn,Signs,58,35,Male,,No,Curve,Serious,Minor,Fatal
+Tamil Nadu,Coimbatore,2018,August,Thursday,12:45,5,Pedestrian,8,2,Rainy,National Highway,Wet,Dawn,Signs,60,58,Female,Expired,No,Curve,Serious,Minor,Minor
+Tripura,Unknown,2023,May,Thursday,7:8,3,Auto-Rickshaw,8,3,Stormy,National Highway,Wet,Dawn,Police Checkpost,36,56,Male,Valid,No,Bridge,Fatal,Serious,Minor
+Tripura,Unknown,2020,February,Tuesday,21:53,2,Bus,5,5,Clear,Urban Road,Dry,Daylight,Signs,118,54,Female,,Yes,Straight Road,Fatal,Fatal,Minor
+Rajasthan,Jaipur,2022,April,Sunday,19:34,3,Truck,6,5,Clear,State Highway,Dry,Dark,Signs,42,39,Female,Expired,No,Curve,Minor,Serious,Minor
+Goa,Unknown,2018,May,Tuesday,6:54,1,Cycle,1,2,Clear,National Highway,Wet,Dusk,Signs,119,40,Female,,Yes,Bridge,Minor,Fatal,Serious
+Goa,Unknown,2022,August,Wednesday,14:37,2,Truck,1,5,Rainy,Village Road,Under Construction,Dark,Police Checkpost,55,37,Male,,No,Curve,Serious,Fatal,Minor
+Jammu and Kashmir,Unknown,2022,March,Wednesday,9:2,3,Two-Wheeler,8,4,Stormy,State Highway,Dry,Dark,,108,45,Female,,Yes,Straight Road,Serious,Fatal,Serious
+Telangana,Unknown,2018,March,Thursday,2:18,1,Truck,5,5,Foggy,Urban Road,Under Construction,Daylight,,39,60,Male,,No,Bridge,Fatal,Minor,Serious
+Nagaland,Unknown,2019,August,Wednesday,1:10,2,Auto-Rickshaw,9,2,Foggy,National Highway,Dry,Dusk,Police Checkpost,32,48,Female,,No,Intersection,Serious,Fatal,Fatal
+Kerala,Unknown,2023,August,Sunday,9:21,4,Bus,10,1,Foggy,Urban Road,Wet,Daylight,Signs,37,33,Female,Expired,Yes,Straight Road,Minor,Fatal,Fatal
+Gujarat,Vadodara,2019,November,Friday,13:48,4,Car,7,4,Foggy,Village Road,Wet,Dawn,Police Checkpost,90,37,Male,,No,Curve,Minor,Serious,Minor
+Haryana,Unknown,2019,September,Thursday,17:16,1,Pedestrian,3,5,Stormy,Village Road,Wet,Dusk,Police Checkpost,53,36,Male,Expired,No,Bridge,Minor,Fatal,Serious
+Jammu and Kashmir,Unknown,2020,November,Thursday,3:10,5,Auto-Rickshaw,7,2,Rainy,Urban Road,Under Construction,Dark,Signs,82,55,Male,,Yes,Straight Road,Serious,Serious,Serious
+Karnataka,Bangalore,2023,October,Thursday,18:59,5,Car,10,2,Hazy,Village Road,Wet,Dark,Signs,114,51,Female,Expired,No,Intersection,Fatal,Minor,Minor
+Madhya Pradesh,Unknown,2018,June,Thursday,16:15,2,Bus,10,4,Rainy,Urban Road,Wet,Dark,,95,28,Male,,No,Straight Road,Serious,Fatal,Fatal
+Maharashtra,Nagpur,2022,January,Thursday,15:55,1,Pedestrian,2,1,Foggy,National Highway,Dry,Daylight,Police Checkpost,75,44,Female,,Yes,Intersection,Fatal,Fatal,Minor
+Kerala,Unknown,2018,October,Wednesday,14:56,2,Truck,8,2,Foggy,Village Road,Dry,Dusk,,101,62,Male,,Yes,Curve,Serious,Minor,Fatal
+Gujarat,Ahmedabad,2022,June,Wednesday,5:45,1,Pedestrian,9,1,Rainy,Village Road,Dry,Daylight,Police Checkpost,82,67,Male,,Yes,Bridge,Minor,Fatal,Serious
+Mizoram,Unknown,2021,February,Monday,19:41,5,Auto-Rickshaw,7,3,Foggy,National Highway,Wet,Daylight,Signs,33,56,Male,,No,Curve,Serious,Minor,Minor
+Goa,Unknown,2020,April,Thursday,9:42,4,Auto-Rickshaw,6,3,Hazy,Urban Road,Under Construction,Dusk,Signs,114,45,Female,Expired,Yes,Straight Road,Serious,Minor,Minor
+Uttarakhand,Unknown,2019,June,Monday,16:15,3,Car,3,0,Stormy,State Highway,Dry,Dusk,Signals,37,58,Female,,No,Curve,Minor,Serious,Minor
+Gujarat,Surat,2023,January,Monday,21:28,2,Two-Wheeler,10,5,Clear,State Highway,Under Construction,Daylight,Signs,91,25,Male,,No,Bridge,Minor,Minor,Minor
+Sikkim,Unknown,2021,September,Saturday,4:57,5,Pedestrian,0,0,Clear,Village Road,Under Construction,Dark,Signs,91,67,Male,,No,Bridge,Serious,Serious,Serious
+Bihar,Unknown,2019,June,Saturday,2:25,5,Truck,9,4,Hazy,Village Road,Wet,Daylight,Police Checkpost,102,34,Female,Expired,Yes,Bridge,Minor,Serious,Serious
+Delhi,New Delhi,2020,December,Thursday,18:12,2,Auto-Rickshaw,0,5,Hazy,State Highway,Dry,Dark,Signs,65,35,Male,,Yes,Intersection,Minor,Serious,Serious
+Goa,Unknown,2020,February,Monday,1:57,1,Cycle,10,2,Clear,State Highway,Dry,Dark,Signs,102,68,Male,Valid,No,Bridge,Serious,Fatal,Minor
+Chandigarh,Unknown,2019,October,Wednesday,0:47,3,Auto-Rickshaw,5,2,Stormy,State Highway,Dry,Dark,Signals,112,27,Female,Expired,No,Bridge,Fatal,Serious,Fatal
+Gujarat,Ahmedabad,2023,July,Saturday,0:44,2,Pedestrian,6,5,Stormy,Village Road,Under Construction,Dark,,77,53,Male,,Yes,Intersection,Serious,Minor,Minor
+Tripura,Unknown,2019,February,Monday,21:18,5,Pedestrian,2,5,Foggy,Village Road,Under Construction,Dusk,,99,57,Female,,Yes,Bridge,Minor,Minor,Fatal
+Manipur,Unknown,2022,February,Thursday,8:2,4,Car,10,3,Rainy,National Highway,Dry,Dawn,,104,67,Male,Valid,Yes,Intersection,Fatal,Fatal,Minor
+Puducherry,Unknown,2020,January,Sunday,11:32,1,Car,2,5,Hazy,National Highway,Wet,Dark,,75,60,Female,Valid,No,Bridge,Fatal,Serious,Minor
+Haryana,Unknown,2020,March,Sunday,8:10,4,Bus,5,2,Stormy,State Highway,Dry,Daylight,,106,44,Female,Valid,Yes,Curve,Serious,Fatal,Fatal
+Gujarat,Ahmedabad,2023,March,Wednesday,9:15,1,Car,10,0,Hazy,Village Road,Wet,Daylight,,119,25,Female,,Yes,Intersection,Fatal,Minor,Minor
+Kerala,Unknown,2022,October,Tuesday,0:7,4,Pedestrian,10,0,Stormy,State Highway,Under Construction,Dawn,Signs,66,23,Female,Valid,No,Curve,Serious,Minor,Fatal
+Assam,Unknown,2022,August,Wednesday,0:38,3,Two-Wheeler,9,3,Rainy,Village Road,Under Construction,Dusk,,103,60,Female,Valid,No,Intersection,Minor,Serious,Minor
+Sikkim,Unknown,2022,May,Monday,15:38,5,Bus,5,0,Hazy,Village Road,Damaged,Dawn,Signs,102,48,Female,Expired,No,Curve,Minor,Serious,Serious
+Meghalaya,Unknown,2019,September,Monday,18:32,5,Bus,8,2,Foggy,National Highway,Under Construction,Dusk,,58,19,Female,Valid,No,Straight Road,Minor,Serious,Serious
+Rajasthan,Jaipur,2019,July,Saturday,11:14,1,Car,5,1,Stormy,National Highway,Wet,Dark,Police Checkpost,71,59,Female,Expired,No,Straight Road,Fatal,Fatal,Fatal
+Arunachal Pradesh,Unknown,2018,June,Saturday,9:44,4,Truck,9,1,Hazy,Village Road,Wet,Dusk,Signals,95,18,Female,Expired,No,Intersection,Minor,Fatal,Minor
+Uttarakhand,Unknown,2021,September,Tuesday,20:38,3,Car,10,1,Stormy,Urban Road,Damaged,Dark,,111,28,Female,Valid,Yes,Curve,Minor,Fatal,Serious
+Madhya Pradesh,Unknown,2018,March,Thursday,19:14,2,Two-Wheeler,3,3,Foggy,State Highway,Under Construction,Daylight,,81,18,Female,,No,Bridge,Serious,Serious,Fatal
+Andhra Pradesh,Vijayawada,2021,November,Wednesday,5:53,3,Bus,0,3,Foggy,Village Road,Damaged,Dark,Police Checkpost,84,48,Female,Expired,No,Straight Road,Fatal,Serious,Serious
+Uttarakhand,Unknown,2022,April,Sunday,8:8,5,Cycle,4,2,Clear,Village Road,Wet,Daylight,Signals,87,23,Male,Valid,Yes,Intersection,Fatal,Minor,Minor
+Jharkhand,Unknown,2023,January,Monday,5:5,5,Two-Wheeler,5,1,Stormy,State Highway,Under Construction,Dusk,,108,33,Female,Valid,Yes,Intersection,Fatal,Minor,Minor
+Jammu and Kashmir,Unknown,2021,June,Thursday,23:27,3,Pedestrian,0,5,Hazy,State Highway,Wet,Dawn,Signs,89,51,Female,Expired,Yes,Curve,Serious,Serious,Serious
+Odisha,Unknown,2019,May,Sunday,10:35,5,Cycle,5,1,Hazy,State Highway,Dry,Dusk,Police Checkpost,45,56,Male,Expired,Yes,Bridge,Minor,Serious,Serious
+Delhi,Dwarka,2021,April,Tuesday,8:34,3,Pedestrian,10,3,Stormy,Urban Road,Wet,Dawn,Signs,100,69,Female,Valid,Yes,Straight Road,Fatal,Minor,Minor
+Andhra Pradesh,Tirupati,2020,May,Friday,18:2,2,Truck,7,1,Hazy,Urban Road,Wet,Dark,Police Checkpost,111,44,Male,,Yes,Intersection,Serious,Fatal,Fatal
+Uttar Pradesh,Varanasi,2020,June,Wednesday,4:1,3,Truck,10,3,Stormy,Urban Road,Damaged,Dusk,Signs,35,24,Female,Valid,No,Intersection,Fatal,Minor,Minor
+Chhattisgarh,Unknown,2021,April,Saturday,5:38,4,Pedestrian,6,4,Foggy,State Highway,Dry,Dusk,Signals,37,22,Male,Valid,Yes,Intersection,Serious,Serious,Serious
+Haryana,Unknown,2020,July,Sunday,22:36,2,Two-Wheeler,10,3,Clear,Urban Road,Damaged,Dark,,61,46,Female,Valid,No,Bridge,Serious,Fatal,Fatal
+Rajasthan,Udaipur,2023,July,Friday,11:38,3,Car,0,4,Clear,State Highway,Dry,Dark,Signals,32,25,Male,Expired,Yes,Straight Road,Minor,Fatal,Serious
+Jharkhand,Unknown,2020,February,Tuesday,22:38,5,Pedestrian,4,1,Hazy,National Highway,Under Construction,Daylight,Police Checkpost,110,57,Male,,No,Curve,Fatal,Minor,Serious
+Assam,Unknown,2018,November,Friday,9:58,1,Car,8,0,Foggy,State Highway,Under Construction,Dusk,,102,61,Female,Valid,Yes,Intersection,Serious,Serious,Minor
+Delhi,Dwarka,2019,January,Wednesday,19:44,5,Car,5,0,Rainy,Village Road,Damaged,Daylight,Signs,101,48,Female,Valid,Yes,Straight Road,Serious,Serious,Serious
+Goa,Unknown,2022,April,Saturday,9:45,1,Two-Wheeler,2,5,Rainy,National Highway,Under Construction,Dawn,Signals,35,31,Female,,Yes,Intersection,Minor,Serious,Minor
+Uttarakhand,Unknown,2021,July,Sunday,17:53,3,Pedestrian,10,0,Foggy,State Highway,Wet,Dawn,,60,26,Female,,Yes,Intersection,Fatal,Minor,Serious
+Telangana,Unknown,2022,March,Sunday,16:33,1,Pedestrian,6,2,Hazy,Urban Road,Dry,Dusk,Signs,76,18,Female,Expired,No,Straight Road,Minor,Minor,Fatal
+Nagaland,Unknown,2020,September,Friday,12:50,1,Two-Wheeler,4,0,Clear,National Highway,Dry,Dawn,Signs,44,43,Female,Valid,Yes,Straight Road,Fatal,Serious,Fatal
+Haryana,Unknown,2022,September,Saturday,14:52,3,Bus,5,5,Foggy,Village Road,Dry,Dusk,Signals,67,57,Female,Expired,Yes,Intersection,Minor,Fatal,Minor
+Gujarat,Surat,2020,August,Sunday,2:14,1,Cycle,6,3,Clear,Village Road,Wet,Dawn,Police Checkpost,41,65,Male,Valid,No,Curve,Serious,Fatal,Minor
+Telangana,Unknown,2021,June,Friday,4:8,3,Auto-Rickshaw,0,4,Stormy,National Highway,Damaged,Dusk,Police Checkpost,97,21,Male,Valid,Yes,Bridge,Minor,Minor,Serious
+Telangana,Unknown,2020,January,Monday,15:34,3,Two-Wheeler,3,0,Hazy,Village Road,Wet,Dawn,Signals,30,23,Female,,No,Curve,Serious,Minor,Minor
+Mizoram,Unknown,2023,February,Friday,8:20,5,Pedestrian,2,4,Stormy,National Highway,Dry,Dusk,,43,33,Female,Valid,No,Straight Road,Fatal,Minor,Serious
+Assam,Unknown,2023,September,Saturday,23:25,1,Bus,1,3,Clear,National Highway,Under Construction,Daylight,Police Checkpost,60,48,Male,Valid,Yes,Intersection,Fatal,Serious,Serious
+Chhattisgarh,Unknown,2020,April,Tuesday,2:23,3,Car,5,4,Rainy,State Highway,Wet,Daylight,Signs,49,50,Female,Expired,Yes,Intersection,Minor,Minor,Serious
+Assam,Unknown,2022,September,Monday,6:1,2,Cycle,4,1,Stormy,State Highway,Dry,Dark,Signals,102,23,Male,Expired,No,Bridge,Serious,Fatal,Minor
+Tamil Nadu,Coimbatore,2020,November,Monday,6:58,4,Cycle,9,1,Foggy,Village Road,Damaged,Dusk,Signs,114,49,Male,,Yes,Curve,Fatal,Serious,Serious
+Chhattisgarh,Unknown,2018,August,Thursday,7:49,4,Auto-Rickshaw,9,3,Clear,State Highway,Dry,Dark,Signals,40,36,Male,,No,Bridge,Minor,Serious,Serious
+Punjab,Unknown,2021,December,Wednesday,6:39,1,Pedestrian,0,2,Clear,State Highway,Damaged,Dawn,Signs,103,67,Female,,Yes,Straight Road,Fatal,Minor,Fatal
+Tripura,Unknown,2019,May,Friday,5:23,5,Pedestrian,6,0,Rainy,State Highway,Under Construction,Dawn,Police Checkpost,35,40,Female,,Yes,Bridge,Serious,Fatal,Fatal
+Sikkim,Unknown,2020,August,Monday,21:2,3,Car,8,2,Clear,State Highway,Dry,Dusk,,101,68,Male,Expired,Yes,Straight Road,Serious,Serious,Serious
+Chhattisgarh,Unknown,2023,June,Sunday,0:40,2,Two-Wheeler,0,0,Stormy,Village Road,Wet,Dark,,48,18,Male,Expired,Yes,Straight Road,Minor,Fatal,Fatal
+Arunachal Pradesh,Unknown,2023,August,Thursday,17:45,1,Truck,1,2,Stormy,National Highway,Damaged,Dusk,,87,31,Female,,Yes,Bridge,Fatal,Fatal,Fatal
+Chhattisgarh,Unknown,2019,May,Friday,0:21,4,Auto-Rickshaw,0,2,Foggy,Village Road,Dry,Dusk,Police Checkpost,56,61,Female,Valid,No,Intersection,Minor,Minor,Serious
+Goa,Unknown,2021,April,Friday,12:1,5,Truck,1,3,Rainy,State Highway,Wet,Dusk,Police Checkpost,84,51,Male,,Yes,Curve,Fatal,Minor,Serious
+Karnataka,Mangalore,2022,June,Sunday,17:25,3,Bus,8,4,Rainy,National Highway,Wet,Daylight,,86,37,Male,,No,Curve,Fatal,Serious,Fatal
+Karnataka,Bangalore,2021,March,Wednesday,3:38,3,Car,7,4,Rainy,Village Road,Damaged,Dusk,Police Checkpost,86,48,Male,Expired,Yes,Bridge,Minor,Minor,Minor
+Jammu and Kashmir,Unknown,2021,November,Sunday,21:39,1,Two-Wheeler,0,2,Rainy,State Highway,Dry,Dark,Police Checkpost,41,50,Female,,No,Intersection,Serious,Fatal,Fatal
+Mizoram,Unknown,2022,October,Friday,11:30,2,Car,0,2,Rainy,Village Road,Wet,Dusk,Signs,40,42,Female,Expired,Yes,Straight Road,Minor,Minor,Fatal
+Nagaland,Unknown,2022,January,Friday,14:55,1,Two-Wheeler,7,5,Clear,Urban Road,Damaged,Dawn,Signals,118,19,Male,,No,Intersection,Fatal,Minor,Minor
+Himachal Pradesh,Unknown,2023,February,Friday,12:16,4,Car,5,0,Hazy,State Highway,Wet,Daylight,Signals,68,52,Male,Valid,Yes,Curve,Minor,Fatal,Serious
+Haryana,Unknown,2018,December,Wednesday,21:11,5,Two-Wheeler,4,2,Foggy,National Highway,Dry,Dusk,Signals,42,51,Female,,Yes,Straight Road,Serious,Serious,Fatal
+Chhattisgarh,Unknown,2022,April,Tuesday,8:58,4,Bus,3,2,Stormy,National Highway,Damaged,Daylight,Signs,115,70,Male,,No,Curve,Minor,Fatal,Minor
+Delhi,Rohini,2018,January,Friday,13:21,5,Pedestrian,9,5,Foggy,State Highway,Damaged,Dark,,45,52,Female,Expired,Yes,Straight Road,Fatal,Serious,Minor
+Punjab,Unknown,2020,August,Wednesday,4:49,5,Auto-Rickshaw,5,2,Stormy,Urban Road,Damaged,Dark,Signs,99,50,Female,Valid,Yes,Curve,Serious,Fatal,Fatal
+Rajasthan,Jaipur,2021,March,Sunday,4:50,5,Truck,9,2,Hazy,Urban Road,Damaged,Dusk,Signals,48,23,Male,,No,Intersection,Serious,Minor,Minor
+Mizoram,Unknown,2023,October,Saturday,17:58,3,Car,7,1,Foggy,State Highway,Wet,Dusk,,117,28,Male,,No,Intersection,Minor,Serious,Serious
+Telangana,Unknown,2021,February,Monday,5:0,3,Car,4,0,Clear,Village Road,Wet,Dark,Police Checkpost,53,62,Female,,No,Curve,Minor,Minor,Fatal
+Punjab,Unknown,2018,August,Wednesday,15:59,4,Auto-Rickshaw,4,2,Stormy,Urban Road,Damaged,Dusk,,107,34,Female,,No,Intersection,Serious,Fatal,Fatal
+Uttar Pradesh,Varanasi,2023,July,Thursday,21:57,3,Two-Wheeler,4,5,Rainy,Urban Road,Wet,Daylight,Signs,44,24,Male,,Yes,Straight Road,Minor,Minor,Serious
+Karnataka,Bangalore,2020,May,Thursday,6:49,2,Cycle,8,2,Rainy,Urban Road,Wet,Daylight,Signs,96,43,Male,Valid,Yes,Intersection,Serious,Minor,Minor
+Rajasthan,Jaipur,2018,October,Saturday,4:24,1,Bus,9,2,Rainy,Urban Road,Wet,Dusk,Signs,79,64,Male,Expired,No,Intersection,Minor,Serious,Fatal
+Rajasthan,Udaipur,2018,January,Monday,19:53,3,Two-Wheeler,5,3,Clear,Village Road,Dry,Daylight,,95,24,Male,Valid,Yes,Straight Road,Fatal,Minor,Serious
+Sikkim,Unknown,2020,March,Monday,6:39,3,Pedestrian,4,1,Stormy,State Highway,Wet,Daylight,Signals,43,25,Male,,No,Straight Road,Minor,Serious,Minor
+Maharashtra,Mumbai,2020,July,Saturday,23:21,5,Bus,6,2,Hazy,Urban Road,Damaged,Dawn,Signs,82,68,Female,Valid,No,Curve,Serious,Minor,Minor
+Telangana,Unknown,2020,March,Wednesday,8:29,3,Cycle,6,1,Clear,State Highway,Under Construction,Dusk,Police Checkpost,41,24,Female,,No,Bridge,Fatal,Fatal,Fatal
+Goa,Unknown,2023,September,Thursday,14:29,3,Bus,0,1,Foggy,State Highway,Damaged,Dawn,,64,19,Male,,No,Straight Road,Minor,Serious,Fatal
+Jharkhand,Unknown,2023,January,Monday,2:22,5,Pedestrian,0,0,Foggy,National Highway,Dry,Daylight,,75,67,Male,,No,Bridge,Minor,Minor,Serious
+Puducherry,Unknown,2022,April,Monday,15:32,4,Two-Wheeler,0,3,Rainy,State Highway,Under Construction,Dawn,Police Checkpost,118,62,Male,Expired,No,Bridge,Minor,Serious,Minor
+Assam,Unknown,2022,June,Saturday,21:29,5,Pedestrian,10,2,Stormy,State Highway,Wet,Dawn,Signs,61,19,Male,Expired,No,Curve,Minor,Minor,Minor
+Jammu and Kashmir,Unknown,2023,December,Friday,17:12,5,Cycle,10,3,Rainy,Urban Road,Under Construction,Dark,Signals,68,61,Female,Expired,Yes,Intersection,Fatal,Minor,Fatal
+Uttarakhand,Unknown,2023,September,Wednesday,1:36,5,Truck,5,3,Hazy,State Highway,Dry,Dusk,,56,41,Male,,Yes,Intersection,Serious,Fatal,Minor
+West Bengal,Kolkata,2020,April,Friday,7:58,2,Auto-Rickshaw,2,5,Clear,State Highway,Under Construction,Dawn,,58,47,Female,Valid,No,Bridge,Minor,Serious,Fatal
+Odisha,Unknown,2023,August,Thursday,8:19,2,Two-Wheeler,8,1,Foggy,Village Road,Damaged,Daylight,,112,59,Male,Expired,Yes,Curve,Fatal,Serious,Serious
+Rajasthan,Udaipur,2022,June,Wednesday,2:29,3,Bus,2,5,Stormy,State Highway,Dry,Daylight,Signals,78,65,Male,,Yes,Straight Road,Minor,Fatal,Minor
+Madhya Pradesh,Unknown,2019,December,Tuesday,6:32,5,Bus,1,2,Clear,National Highway,Damaged,Dawn,Police Checkpost,43,43,Female,Expired,No,Straight Road,Minor,Serious,Serious
+Maharashtra,Nagpur,2020,January,Monday,15:32,2,Car,4,1,Stormy,Urban Road,Wet,Dawn,,65,67,Female,,No,Straight Road,Fatal,Minor,Serious
+West Bengal,Durgapur,2023,November,Tuesday,6:31,4,Truck,0,3,Hazy,Urban Road,Damaged,Dawn,,82,27,Male,Expired,No,Intersection,Serious,Serious,Serious
+Telangana,Unknown,2021,November,Sunday,23:2,3,Truck,4,0,Foggy,Urban Road,Damaged,Dawn,,65,59,Male,,No,Straight Road,Serious,Minor,Fatal
+Assam,Unknown,2022,January,Sunday,17:55,4,Cycle,1,0,Hazy,State Highway,Dry,Dusk,Signals,31,30,Female,,Yes,Curve,Minor,Fatal,Fatal
+Madhya Pradesh,Unknown,2021,January,Tuesday,15:3,4,Bus,2,3,Stormy,State Highway,Under Construction,Dusk,Signs,98,58,Male,Valid,No,Bridge,Minor,Fatal,Fatal
+Tamil Nadu,Madurai,2021,December,Monday,0:51,1,Truck,10,3,Rainy,State Highway,Damaged,Dusk,Police Checkpost,30,51,Female,,Yes,Straight Road,Serious,Fatal,Minor
+Chandigarh,Unknown,2022,May,Sunday,7:15,2,Pedestrian,1,3,Stormy,State Highway,Dry,Dark,Signs,73,28,Female,Valid,Yes,Bridge,Minor,Minor,Minor
+Bihar,Unknown,2018,September,Thursday,6:23,1,Bus,5,1,Stormy,National Highway,Under Construction,Daylight,Signals,85,65,Female,Valid,Yes,Intersection,Serious,Fatal,Fatal
+Delhi,Rohini,2021,April,Saturday,3:23,1,Bus,9,2,Foggy,National Highway,Under Construction,Daylight,,75,54,Female,,Yes,Bridge,Fatal,Serious,Fatal
+Tamil Nadu,Madurai,2022,January,Monday,2:8,2,Auto-Rickshaw,2,2,Clear,State Highway,Damaged,Dawn,Police Checkpost,105,23,Female,Expired,Yes,Bridge,Fatal,Minor,Fatal
+Assam,Unknown,2021,September,Saturday,23:22,1,Cycle,2,3,Hazy,Village Road,Under Construction,Daylight,Signs,46,55,Female,,No,Straight Road,Serious,Fatal,Serious
+Sikkim,Unknown,2022,July,Wednesday,22:20,4,Bus,6,0,Hazy,State Highway,Wet,Dawn,Police Checkpost,37,23,Male,Valid,No,Curve,Fatal,Fatal,Fatal
+Andhra Pradesh,Visakhapatnam,2018,April,Monday,20:13,2,Auto-Rickshaw,1,1,Foggy,Village Road,Dry,Daylight,,92,27,Female,Valid,Yes,Bridge,Minor,Minor,Minor
+Haryana,Unknown,2020,March,Wednesday,18:50,4,Pedestrian,6,3,Rainy,Village Road,Under Construction,Dusk,Signals,106,44,Female,Expired,No,Intersection,Minor,Serious,Minor
+Jammu and Kashmir,Unknown,2023,April,Sunday,18:27,1,Bus,3,1,Clear,National Highway,Under Construction,Dawn,,32,62,Male,Expired,Yes,Bridge,Fatal,Fatal,Fatal
+Telangana,Unknown,2022,June,Friday,17:52,4,Pedestrian,1,5,Hazy,National Highway,Damaged,Daylight,,101,30,Male,Valid,Yes,Bridge,Fatal,Minor,Serious
+Himachal Pradesh,Unknown,2021,November,Thursday,23:58,5,Pedestrian,9,5,Clear,State Highway,Dry,Dawn,,85,31,Male,,Yes,Bridge,Serious,Serious,Serious
+Mizoram,Unknown,2021,August,Sunday,21:33,1,Cycle,3,0,Rainy,State Highway,Damaged,Dusk,Signals,86,70,Male,Expired,No,Curve,Minor,Serious,Fatal
+West Bengal,Siliguri,2021,April,Friday,4:4,2,Two-Wheeler,2,2,Clear,Urban Road,Dry,Dark,,36,26,Male,Expired,No,Curve,Serious,Fatal,Serious
+Assam,Unknown,2020,November,Monday,7:34,3,Truck,4,2,Clear,National Highway,Damaged,Dark,Police Checkpost,42,25,Female,Expired,Yes,Curve,Serious,Serious,Serious
+Tamil Nadu,Chennai,2018,November,Saturday,1:42,2,Truck,1,5,Foggy,State Highway,Wet,Dark,Police Checkpost,50,65,Male,Valid,Yes,Bridge,Fatal,Fatal,Minor
+Chhattisgarh,Unknown,2019,November,Friday,4:19,5,Bus,8,2,Stormy,National Highway,Under Construction,Dusk,Signs,64,41,Male,Valid,Yes,Straight Road,Minor,Fatal,Fatal
+Kerala,Unknown,2019,May,Saturday,15:49,4,Car,1,0,Clear,Village Road,Wet,Dusk,Police Checkpost,77,60,Female,,Yes,Intersection,Fatal,Minor,Fatal
+Karnataka,Mangalore,2022,November,Tuesday,0:30,1,Bus,3,1,Hazy,Village Road,Damaged,Dark,Signs,31,57,Female,Valid,Yes,Straight Road,Minor,Serious,Fatal
+Uttar Pradesh,Kanpur,2021,July,Thursday,20:34,2,Pedestrian,6,1,Rainy,National Highway,Wet,Dark,Signals,54,47,Female,,Yes,Curve,Serious,Fatal,Serious
+Gujarat,Surat,2022,August,Sunday,13:32,1,Truck,10,1,Rainy,National Highway,Wet,Dusk,Police Checkpost,83,28,Male,Expired,Yes,Bridge,Serious,Fatal,Fatal
+Chhattisgarh,Unknown,2018,August,Thursday,23:21,4,Bus,9,2,Rainy,State Highway,Under Construction,Dark,Signs,56,39,Female,,Yes,Intersection,Serious,Minor,Minor
+Bihar,Unknown,2019,December,Sunday,14:11,4,Pedestrian,8,0,Hazy,National Highway,Damaged,Dusk,Signals,110,50,Female,,Yes,Intersection,Minor,Minor,Minor
+Arunachal Pradesh,Unknown,2019,May,Friday,17:56,3,Two-Wheeler,7,1,Clear,Urban Road,Under Construction,Dusk,Police Checkpost,89,19,Male,Valid,Yes,Bridge,Fatal,Serious,Minor
+Punjab,Unknown,2019,May,Friday,19:5,5,Two-Wheeler,6,5,Stormy,State Highway,Wet,Dawn,Signals,80,66,Female,Valid,Yes,Intersection,Fatal,Minor,Serious
+Assam,Unknown,2023,May,Tuesday,0:12,4,Truck,7,0,Foggy,Village Road,Under Construction,Daylight,,103,70,Female,Expired,Yes,Curve,Serious,Minor,Minor
+Andhra Pradesh,Visakhapatnam,2018,May,Tuesday,0:25,2,Bus,6,0,Foggy,Urban Road,Wet,Dark,,86,24,Female,,Yes,Straight Road,Minor,Fatal,Fatal
+Odisha,Unknown,2018,July,Thursday,12:1,3,Auto-Rickshaw,7,2,Stormy,State Highway,Damaged,Dark,Signs,79,41,Male,Valid,Yes,Curve,Minor,Serious,Minor
+Goa,Unknown,2023,June,Friday,7:24,2,Truck,2,5,Stormy,National Highway,Wet,Dark,Signs,111,43,Female,Valid,Yes,Straight Road,Serious,Fatal,Serious
+Karnataka,Mysore,2020,August,Monday,7:7,3,Truck,2,1,Stormy,State Highway,Damaged,Daylight,Signs,107,44,Female,,Yes,Bridge,Minor,Fatal,Minor
+Puducherry,Unknown,2022,August,Monday,4:34,4,Bus,10,2,Stormy,National Highway,Damaged,Dark,Signals,109,27,Male,,No,Straight Road,Fatal,Minor,Minor
+Nagaland,Unknown,2021,December,Monday,6:37,2,Bus,2,4,Hazy,State Highway,Dry,Dark,Signals,40,66,Male,Expired,Yes,Straight Road,Minor,Fatal,Fatal
+Puducherry,Unknown,2020,October,Monday,19:12,1,Auto-Rickshaw,8,0,Foggy,Village Road,Under Construction,Dusk,Signals,116,52,Male,Expired,No,Bridge,Fatal,Minor,Minor
+Meghalaya,Unknown,2020,December,Thursday,23:40,5,Cycle,9,0,Stormy,Urban Road,Dry,Dawn,Signs,103,56,Female,Valid,No,Curve,Fatal,Minor,Serious
+Maharashtra,Pune,2022,June,Monday,4:7,4,Car,1,3,Hazy,Urban Road,Under Construction,Dusk,,104,29,Female,,No,Intersection,Fatal,Fatal,Fatal
+Meghalaya,Unknown,2020,April,Saturday,4:28,5,Cycle,6,0,Hazy,State Highway,Under Construction,Dusk,Signals,39,65,Male,,Yes,Curve,Serious,Fatal,Minor
+Jharkhand,Unknown,2021,September,Monday,9:45,1,Pedestrian,4,3,Hazy,National Highway,Under Construction,Dawn,Police Checkpost,46,69,Male,Valid,No,Straight Road,Fatal,Minor,Fatal
+Manipur,Unknown,2023,March,Friday,3:6,4,Auto-Rickshaw,1,0,Stormy,Urban Road,Under Construction,Daylight,Signs,66,69,Male,Expired,No,Curve,Minor,Minor,Minor
+Tamil Nadu,Madurai,2020,January,Thursday,19:22,1,Pedestrian,2,2,Hazy,Village Road,Dry,Dark,,114,64,Female,,Yes,Straight Road,Minor,Serious,Serious
+Rajasthan,Jodhpur,2021,July,Saturday,8:26,3,Truck,7,1,Clear,Urban Road,Damaged,Dawn,Signs,35,53,Male,Valid,No,Straight Road,Fatal,Fatal,Minor
+Uttar Pradesh,Lucknow,2021,November,Thursday,17:19,1,Bus,4,4,Clear,National Highway,Damaged,Dusk,Signs,98,35,Female,,Yes,Straight Road,Minor,Serious,Minor
+Rajasthan,Jaipur,2023,November,Saturday,9:17,4,Car,1,0,Stormy,Village Road,Under Construction,Dusk,Signs,89,23,Male,,Yes,Bridge,Minor,Serious,Fatal
+Himachal Pradesh,Unknown,2022,March,Saturday,13:16,2,Car,8,5,Clear,National Highway,Wet,Dusk,,32,62,Female,Expired,Yes,Curve,Fatal,Fatal,Minor
+Haryana,Unknown,2020,September,Friday,6:33,4,Auto-Rickshaw,6,1,Clear,Village Road,Wet,Daylight,Signals,56,43,Male,Expired,Yes,Intersection,Minor,Serious,Serious
+Uttar Pradesh,Varanasi,2018,May,Sunday,10:53,3,Two-Wheeler,2,1,Hazy,National Highway,Under Construction,Dusk,,33,24,Female,Valid,Yes,Straight Road,Minor,Minor,Fatal
+Madhya Pradesh,Unknown,2019,February,Thursday,8:19,2,Cycle,8,2,Clear,Village Road,Under Construction,Dusk,Signs,84,66,Male,Valid,No,Curve,Serious,Serious,Serious
+Uttarakhand,Unknown,2019,March,Monday,3:10,1,Bus,1,2,Clear,Urban Road,Wet,Dark,,38,36,Female,,Yes,Curve,Fatal,Fatal,Serious
+Maharashtra,Nagpur,2023,December,Sunday,15:36,2,Cycle,6,2,Clear,Urban Road,Damaged,Daylight,Police Checkpost,46,49,Female,Expired,Yes,Intersection,Fatal,Minor,Minor
+Nagaland,Unknown,2020,June,Tuesday,18:22,1,Two-Wheeler,3,1,Hazy,National Highway,Dry,Dusk,Police Checkpost,91,34,Female,Expired,No,Straight Road,Minor,Minor,Serious
+Maharashtra,Nagpur,2022,July,Monday,22:51,2,Truck,10,2,Clear,State Highway,Under Construction,Dawn,Police Checkpost,90,39,Female,Expired,Yes,Bridge,Serious,Fatal,Serious
+Puducherry,Unknown,2023,November,Wednesday,0:29,3,Truck,1,1,Rainy,Urban Road,Under Construction,Dusk,Signals,92,28,Male,,Yes,Bridge,Serious,Serious,Serious
+Jammu and Kashmir,Unknown,2019,May,Sunday,17:10,2,Two-Wheeler,7,4,Foggy,Village Road,Under Construction,Dawn,Police Checkpost,108,45,Female,Valid,No,Bridge,Serious,Serious,Fatal
+Karnataka,Mysore,2018,March,Sunday,3:39,2,Car,5,3,Foggy,Urban Road,Wet,Dark,Signals,118,55,Female,,Yes,Intersection,Serious,Fatal,Serious
+Jammu and Kashmir,Unknown,2023,April,Sunday,23:55,2,Pedestrian,8,5,Foggy,Urban Road,Dry,Daylight,Police Checkpost,51,40,Female,,No,Intersection,Serious,Fatal,Fatal
+Jammu and Kashmir,Unknown,2023,August,Saturday,19:23,2,Cycle,6,4,Clear,Village Road,Wet,Dark,Police Checkpost,117,30,Female,,No,Intersection,Fatal,Minor,Serious
+Odisha,Unknown,2020,October,Thursday,3:13,5,Bus,0,0,Foggy,Urban Road,Under Construction,Dawn,Police Checkpost,76,62,Male,,Yes,Straight Road,Minor,Fatal,Fatal
+Telangana,Unknown,2019,July,Wednesday,7:58,3,Auto-Rickshaw,10,0,Clear,Village Road,Dry,Daylight,Signs,37,44,Male,Valid,No,Curve,Fatal,Serious,Fatal
+Odisha,Unknown,2019,November,Friday,11:43,3,Car,0,5,Rainy,Urban Road,Under Construction,Dusk,Signals,105,39,Male,,No,Bridge,Serious,Minor,Fatal
+Bihar,Unknown,2023,January,Saturday,19:1,4,Car,7,2,Hazy,National Highway,Under Construction,Dark,Police Checkpost,34,36,Female,,No,Curve,Minor,Fatal,Serious
+Kerala,Unknown,2023,November,Wednesday,21:38,5,Truck,7,3,Rainy,Urban Road,Under Construction,Dawn,Police Checkpost,93,25,Male,Valid,Yes,Straight Road,Serious,Serious,Minor
+Sikkim,Unknown,2023,October,Sunday,6:39,3,Auto-Rickshaw,1,2,Rainy,State Highway,Dry,Dark,Police Checkpost,58,67,Male,,No,Bridge,Minor,Minor,Fatal
+Manipur,Unknown,2020,October,Saturday,23:27,4,Pedestrian,7,0,Stormy,Urban Road,Under Construction,Dawn,Police Checkpost,45,38,Male,Valid,No,Bridge,Minor,Minor,Serious
+Arunachal Pradesh,Unknown,2022,August,Monday,6:21,4,Pedestrian,0,0,Foggy,Urban Road,Wet,Dusk,Signals,75,37,Female,Expired,No,Straight Road,Serious,Fatal,Fatal
+Jharkhand,Unknown,2018,March,Saturday,2:29,3,Bus,9,0,Clear,State Highway,Damaged,Dark,Signals,38,59,Female,,No,Straight Road,Serious,Minor,Minor
+West Bengal,Kolkata,2021,May,Wednesday,18:24,2,Two-Wheeler,1,4,Clear,State Highway,Damaged,Dawn,Police Checkpost,38,21,Male,Valid,Yes,Curve,Fatal,Serious,Serious
+Delhi,New Delhi,2021,May,Sunday,4:51,3,Pedestrian,9,1,Stormy,Urban Road,Dry,Dark,Signs,54,19,Male,,Yes,Curve,Minor,Minor,Serious
+West Bengal,Siliguri,2018,November,Friday,20:31,3,Cycle,0,5,Stormy,Urban Road,Wet,Dark,Signs,105,19,Female,,No,Curve,Fatal,Serious,Fatal
+Gujarat,Surat,2021,June,Saturday,1:42,3,Two-Wheeler,9,0,Clear,Urban Road,Wet,Dawn,,37,63,Female,Expired,No,Bridge,Fatal,Minor,Minor
+Tamil Nadu,Coimbatore,2021,October,Wednesday,8:38,3,Bus,5,4,Clear,State Highway,Damaged,Dusk,Signals,67,51,Female,Expired,No,Bridge,Fatal,Serious,Fatal
+Mizoram,Unknown,2023,May,Thursday,14:43,3,Car,8,5,Stormy,National Highway,Dry,Dusk,Signs,100,69,Female,,Yes,Intersection,Serious,Serious,Serious
+Nagaland,Unknown,2019,February,Wednesday,22:46,2,Two-Wheeler,9,3,Clear,Urban Road,Dry,Dawn,Police Checkpost,106,70,Female,Valid,Yes,Straight Road,Minor,Minor,Minor
+Haryana,Unknown,2018,June,Friday,6:56,2,Pedestrian,8,5,Rainy,State Highway,Wet,Dawn,Police Checkpost,30,23,Male,,Yes,Intersection,Serious,Minor,Minor
+Telangana,Unknown,2019,September,Wednesday,8:21,4,Cycle,2,0,Rainy,Village Road,Wet,Dawn,Police Checkpost,113,38,Male,Expired,Yes,Bridge,Fatal,Minor,Serious
+Jharkhand,Unknown,2020,August,Tuesday,19:14,3,Truck,10,2,Rainy,Urban Road,Damaged,Dark,Signs,79,37,Male,,Yes,Intersection,Minor,Minor,Minor
+Delhi,Dwarka,2020,February,Thursday,13:39,5,Truck,0,0,Foggy,Village Road,Under Construction,Daylight,,60,44,Male,,Yes,Intersection,Serious,Serious,Minor
+Tamil Nadu,Chennai,2021,February,Friday,14:19,5,Bus,9,2,Rainy,State Highway,Wet,Daylight,Signs,106,46,Female,,No,Intersection,Serious,Fatal,Fatal
+Assam,Unknown,2020,June,Tuesday,0:49,2,Two-Wheeler,9,5,Hazy,Urban Road,Wet,Dark,Signs,79,22,Female,Expired,No,Bridge,Fatal,Fatal,Fatal
+Uttarakhand,Unknown,2022,December,Friday,16:11,5,Truck,3,4,Stormy,Urban Road,Damaged,Dusk,,67,34,Female,Valid,Yes,Straight Road,Minor,Minor,Fatal
+Nagaland,Unknown,2019,March,Thursday,7:29,5,Auto-Rickshaw,1,5,Foggy,National Highway,Damaged,Dark,Signals,62,39,Male,,No,Straight Road,Serious,Serious,Minor
+Chandigarh,Unknown,2019,January,Monday,22:47,5,Cycle,8,3,Foggy,State Highway,Under Construction,Dawn,Signs,89,69,Male,,Yes,Curve,Minor,Minor,Fatal
+Jammu and Kashmir,Unknown,2023,August,Sunday,14:59,2,Truck,9,4,Stormy,National Highway,Under Construction,Dark,,88,59,Female,,No,Intersection,Fatal,Fatal,Serious
+Arunachal Pradesh,Unknown,2021,December,Wednesday,9:40,4,Auto-Rickshaw,2,0,Foggy,Village Road,Dry,Dark,,51,63,Female,Expired,No,Intersection,Fatal,Fatal,Minor
+Goa,Unknown,2019,November,Wednesday,14:26,1,Cycle,3,1,Stormy,Urban Road,Damaged,Dusk,Police Checkpost,62,62,Male,,No,Bridge,Minor,Minor,Serious
+Rajasthan,Jodhpur,2022,December,Monday,11:8,1,Two-Wheeler,5,0,Rainy,Village Road,Under Construction,Dark,Police Checkpost,115,66,Male,,Yes,Curve,Serious,Serious,Fatal
+Mizoram,Unknown,2021,May,Sunday,16:54,3,Auto-Rickshaw,3,4,Clear,Village Road,Wet,Daylight,,80,60,Male,Expired,Yes,Intersection,Serious,Minor,Minor
+Andhra Pradesh,Vijayawada,2020,January,Wednesday,10:7,4,Auto-Rickshaw,6,3,Foggy,State Highway,Dry,Daylight,Signals,50,65,Male,Valid,Yes,Curve,Serious,Serious,Serious
+Odisha,Unknown,2023,November,Wednesday,2:57,2,Cycle,0,1,Clear,State Highway,Under Construction,Daylight,Signs,110,66,Female,Valid,Yes,Curve,Minor,Fatal,Minor
+Punjab,Unknown,2021,February,Wednesday,11:35,4,Auto-Rickshaw,6,0,Rainy,State Highway,Damaged,Dark,,79,52,Female,Valid,No,Curve,Fatal,Serious,Fatal
+Nagaland,Unknown,2023,March,Monday,2:41,1,Pedestrian,5,1,Foggy,State Highway,Dry,Dark,Signs,74,40,Female,Valid,Yes,Straight Road,Fatal,Fatal,Fatal
+Goa,Unknown,2018,July,Tuesday,12:16,1,Bus,1,1,Hazy,Urban Road,Damaged,Daylight,Police Checkpost,98,52,Male,Expired,Yes,Intersection,Fatal,Fatal,Serious
+Himachal Pradesh,Unknown,2022,January,Friday,23:22,1,Truck,9,1,Rainy,National Highway,Under Construction,Dusk,Signs,84,50,Female,,Yes,Curve,Minor,Minor,Serious
+Mizoram,Unknown,2020,December,Tuesday,4:51,3,Auto-Rickshaw,7,1,Hazy,State Highway,Damaged,Daylight,Police Checkpost,54,50,Female,Expired,Yes,Bridge,Fatal,Serious,Serious
+Chandigarh,Unknown,2019,August,Tuesday,4:2,1,Auto-Rickshaw,1,5,Rainy,Village Road,Wet,Dark,,72,22,Female,,No,Bridge,Minor,Minor,Serious
+Sikkim,Unknown,2020,May,Wednesday,9:22,4,Two-Wheeler,1,3,Rainy,State Highway,Wet,Dark,,77,22,Male,Valid,Yes,Bridge,Minor,Serious,Serious
+Odisha,Unknown,2023,January,Saturday,13:7,5,Truck,10,0,Clear,State Highway,Dry,Daylight,Signals,78,44,Female,Expired,No,Curve,Serious,Fatal,Minor
+Kerala,Unknown,2018,September,Tuesday,23:21,3,Truck,2,4,Stormy,National Highway,Dry,Dusk,Police Checkpost,71,39,Female,Expired,No,Intersection,Minor,Fatal,Minor
+Odisha,Unknown,2019,June,Thursday,21:56,5,Two-Wheeler,2,3,Hazy,Village Road,Dry,Daylight,Police Checkpost,110,48,Male,Valid,Yes,Curve,Fatal,Serious,Fatal
+Himachal Pradesh,Unknown,2021,June,Saturday,7:18,1,Pedestrian,5,2,Foggy,Urban Road,Dry,Dawn,Police Checkpost,105,30,Male,Expired,Yes,Straight Road,Fatal,Serious,Fatal
+Gujarat,Vadodara,2018,February,Monday,10:59,3,Two-Wheeler,5,1,Clear,State Highway,Dry,Daylight,Police Checkpost,87,23,Male,Expired,Yes,Curve,Serious,Serious,Serious
+Rajasthan,Jaipur,2018,May,Monday,14:18,4,Bus,1,4,Hazy,National Highway,Wet,Daylight,Police Checkpost,77,70,Female,,Yes,Curve,Minor,Serious,Serious
+Tamil Nadu,Coimbatore,2021,September,Tuesday,4:20,4,Bus,6,0,Hazy,Village Road,Wet,Dusk,,72,46,Female,,Yes,Intersection,Fatal,Fatal,Fatal
+Madhya Pradesh,Unknown,2019,December,Thursday,16:58,3,Truck,4,3,Hazy,Village Road,Under Construction,Dusk,Signals,41,45,Male,Expired,No,Bridge,Fatal,Minor,Serious
+Chandigarh,Unknown,2018,July,Wednesday,3:33,5,Bus,9,3,Clear,Urban Road,Under Construction,Daylight,Signals,73,57,Female,Expired,Yes,Bridge,Fatal,Serious,Minor
+Uttar Pradesh,Lucknow,2020,November,Tuesday,8:12,1,Pedestrian,9,4,Clear,Village Road,Dry,Daylight,Signs,75,61,Male,Valid,No,Curve,Minor,Serious,Serious
+Madhya Pradesh,Unknown,2018,April,Saturday,14:41,1,Truck,8,1,Stormy,Village Road,Wet,Dusk,Signals,80,47,Male,Valid,Yes,Intersection,Fatal,Minor,Serious
+Karnataka,Mysore,2020,December,Tuesday,12:46,2,Car,9,0,Foggy,Urban Road,Dry,Dusk,,60,58,Male,Expired,Yes,Straight Road,Fatal,Fatal,Serious
+Himachal Pradesh,Unknown,2018,April,Friday,1:25,2,Car,6,2,Rainy,National Highway,Dry,Dusk,Police Checkpost,30,33,Male,Expired,No,Intersection,Minor,Serious,Serious
+Telangana,Unknown,2023,May,Tuesday,12:24,4,Cycle,9,4,Stormy,National Highway,Wet,Dusk,Police Checkpost,57,43,Female,,No,Bridge,Minor,Fatal,Serious
+Jammu and Kashmir,Unknown,2023,September,Thursday,21:45,3,Auto-Rickshaw,8,3,Foggy,Village Road,Wet,Dawn,,51,44,Female,Valid,No,Straight Road,Fatal,Serious,Serious
+Himachal Pradesh,Unknown,2019,February,Tuesday,4:1,3,Truck,2,0,Rainy,National Highway,Wet,Dawn,Police Checkpost,79,34,Male,Valid,No,Bridge,Minor,Minor,Minor
+Karnataka,Mysore,2019,October,Monday,5:10,4,Bus,10,2,Stormy,Village Road,Wet,Dark,,44,42,Female,,Yes,Bridge,Minor,Serious,Fatal
+Meghalaya,Unknown,2023,June,Wednesday,2:16,3,Car,6,0,Rainy,Urban Road,Wet,Daylight,Police Checkpost,106,29,Female,Expired,No,Curve,Fatal,Fatal,Minor
+Assam,Unknown,2020,February,Monday,7:43,4,Two-Wheeler,10,5,Foggy,National Highway,Wet,Dusk,Signs,81,50,Male,Expired,No,Straight Road,Serious,Serious,Serious
+Nagaland,Unknown,2020,July,Tuesday,23:36,4,Bus,6,1,Clear,State Highway,Under Construction,Dawn,Signals,106,64,Female,Valid,Yes,Curve,Fatal,Fatal,Minor
+Jammu and Kashmir,Unknown,2023,February,Friday,14:10,2,Car,4,1,Rainy,National Highway,Dry,Dark,Signs,61,29,Male,Valid,Yes,Bridge,Serious,Fatal,Serious

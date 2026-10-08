@@ -1,0 +1,23 @@
+{
+    "State Name": "Jammu and Kashmir",
+    "City Name": "Unknown",
+    "Year": 2021.0,
+    "Month": "May",
+    "Day of Week": "Monday",
+    "Time of Day": "1:46",
+    "Number of Vehicles Involved": 3.0,
+    "Vehicle Type Involved": "Cycle",
+    "Number of Casualties": 5.0,
+    "Number of Fatalities": 2.0,
+    "Weather Conditions": "Hazy",
+    "Road Type": "National Highway",
+    "Road Condition": "Wet",
+    "Lighting Conditions": "Dark",
+    "Traffic Control Presence": "Signs",
+    "Speed Limit (km/h)": 75.0,
+    "Driver Age": 45.0,
+    "Driver Gender": "Male",
+    "Driver License Status": "Valid",
+    "Alcohol Involvement": "Yes",
+    "Accident Location Details": "Curve"
+}
